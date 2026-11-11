@@ -1,15 +1,33 @@
-﻿# Archivos temporales y caché de Python
+# Python: caché y archivos compilados
 __pycache__/
 *.py[cod]
+.pytest_cache/
+.mypy_cache/
+.pyright/
+.ruff_cache/
+.coverage
+htmlcov/
 
 # Entornos virtuales
 .venv/
 venv/
+env/
 
 # Variables de entorno y credenciales
 .env
 .env.*
+!.env.example
 
-# Archivos temporales de Windows
+# Archivos y carpetas generados
+*.log
+build/
+dist/
+*.egg-info/
+
+# Configuración local de herramientas
+.idea/
+
+# Archivos temporales de Windows y macOS
 Thumbs.db
 Desktop.ini
+.DS_Store
