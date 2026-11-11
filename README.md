@@ -16,9 +16,9 @@ Es el área inicial de la biblioteca. Reúne material para desarrollar el pensam
 
 | Área | Qué encontrarás |
 |---|---|
-| [PSeInt y pseudocódigo](./Fundamentos%20de%20Programaci%C3%B3n/1.%20Pseudoc%C3%B3digo%20-%20Pseint/) | Algoritmos, pseudocódigo y ejercicios desde cero. |
-| [Diagramas de flujo - Flowgorithm](./Fundamentos%20de%20Programaci%C3%B3n/2.%20Diagramas%20de%20Flujo%20-%20Flowgorithm/) | Representación visual de algoritmos y ejercicios con diagramas. |
-| [Python](./Fundamentos%20de%20Programaci%C3%B3n/3.%20Python/) | Cursos, ejemplos y práctica con el lenguaje Python. |
+| [PSeInt y pseudocódigo](./Fundamentos%20de%20Programaci%C3%B3n/01%20-%20PSeInt%20y%20pseudoc%C3%B3digo/) | Algoritmos, pseudocódigo y ejercicios desde cero. |
+| [Diagramas de flujo - Flowgorithm](./Fundamentos%20de%20Programaci%C3%B3n/02%20-%20Diagramas%20de%20flujo%20(Flowgorithm)/) | Representación visual de algoritmos y ejercicios con diagramas. |
+| [Python](./Fundamentos%20de%20Programaci%C3%B3n/03%20-%20Python/) | Cursos, ejemplos y práctica con el lenguaje Python. |
 
 ## 🧭 Ruta sugerida para comenzar
 
