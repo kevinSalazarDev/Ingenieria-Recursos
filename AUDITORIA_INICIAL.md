@@ -26,9 +26,11 @@ Se corrigieron diez archivos Python y los cambios se incorporaron a la rama prin
 
 ### Verificación y límites
 
-Los diez archivos modificados se volvieron a leer y pasaron una comprobación sintáctica con `ast.parse` durante la revisión. Posteriormente se añadió el script `scripts/check_python_syntax.py` y un flujo de GitHub Actions para comprobar automáticamente la sintaxis de todos los archivos Python de la sección cuando se actualicen.
+Los diez archivos modificados se volvieron a leer y pasaron una comprobación sintáctica con `ast.parse` durante la revisión. Después se añadió el script `scripts/check_python_syntax.py` y un flujo de GitHub Actions. La primera ejecución en la rama principal terminó correctamente: el flujo comprobó la sintaxis de los 41 archivos Python detectados.
 
-La comprobación sintáctica **no ejecuta los programas** ni verifica que la lógica sea correcta para todos los casos. Es necesario probar cada ejercicio con datos reales y contrastar su comportamiento con el enunciado original. La primera ejecución del flujo automático se realizará al integrar esta mejora de calidad.
+Además, se realizaron 26 pruebas puntuales de comportamiento simulando entradas en los diez ejercicios corregidos. Se incluyeron casos normales, límites, nombres de una o varias palabras, valores cero y entradas fuera de rango. Las 26 comprobaciones de salida esperada pasaron.
+
+Estas pruebas puntuales **no equivalen a una suite exhaustiva ni demuestran que toda la lógica sea correcta**. La comprobación automática revisa sintaxis, no ejecuta los programas. Es necesario continuar probando los ejercicios con datos reales y contrastar su comportamiento con los enunciados originales.
 
 ## Pendientes de PSeInt
 
