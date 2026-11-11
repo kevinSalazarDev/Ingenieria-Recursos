@@ -1,7 +1,7 @@
 
 {
     "python-envs.defaultEnvManager": "ms-python.python:system",
-    "gitdoc.enabled": true,
+    "gitdoc.enabled": false,
     "gitdoc.autoCommitDelay": 30000,
     "gitdoc.autoPush": "onCommit",
     "gitdoc.pushMode": "push",
