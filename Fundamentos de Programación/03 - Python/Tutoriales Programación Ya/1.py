@@ -1,10 +1,9 @@
 def calcular_total(precio, cantidad):
     return precio * cantidad
 
+precio = float(input("Ingrese el "))
+    cantidad = 3
 
-precio = float(input("Ingrese el precio del producto: "))
-cantidad = 3
+    resultado = calcular_total(precio, cantidad)
 
-resultado = calcular_total(precio, cantidad)
-
-print("El total de la compra es:", resultado)
+    print("El total de la compra es:", resultado)
