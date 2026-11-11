@@ -1,0 +1,33 @@
+name: Comprobar sintaxis de Python
+
+on:
+  push:
+    paths:
+      - "Fundamentos de Programación/03 - Python/**/*.py"
+      - "scripts/check_python_syntax.py"
+      - ".github/workflows/python-syntax.yml"
+  pull_request:
+    paths:
+      - "Fundamentos de Programación/03 - Python/**/*.py"
+      - "scripts/check_python_syntax.py"
+      - ".github/workflows/python-syntax.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  syntax:
+    name: Verificar archivos Python
+    runs-on: ubuntu-latest
+    steps:
+      - name: Obtener el repositorio
+        uses: actions/checkout@v4
+
+      - name: Preparar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Comprobar sintaxis
+        run: python scripts/check_python_syntax.py
