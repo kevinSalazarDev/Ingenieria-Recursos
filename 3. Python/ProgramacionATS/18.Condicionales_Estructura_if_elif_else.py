@@ -7,3 +7,5 @@ if numero>0:
 
 
 print ("hola")
+
+print("hola2")
