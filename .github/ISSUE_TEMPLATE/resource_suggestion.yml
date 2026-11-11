@@ -2,7 +2,7 @@ name: Recomendar un recurso
 description: Proponer un curso, libro, documentación o ejercicio para la biblioteca.
 title: "[Recurso]: "
 labels:
-  - recurso
+  - enhancement
 body:
   - type: input
     id: name
