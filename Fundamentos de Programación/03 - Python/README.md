@@ -36,10 +36,10 @@ Los directorios actuales reúnen material de distintas fuentes:
 
 | Carpeta | Uso dentro de la biblioteca |
 |---|---|
-| `ProgramacionATS` | Ejercicios y ejemplos asociados a Programación ATS. |
-| `cs50` | Archivos de práctica asociados al material de CS50. |
-| `curso_intentivo_python` | Ejercicios y apuntes de un curso de Python. |
-| `tutoriales_programacion_ya` | Material de práctica asociado a Tutoriales Programación Ya. |
+| `Programación ATS` | Ejercicios y ejemplos asociados a Programación ATS. |
+| `CS50` | Archivos de práctica asociados al material de CS50. |
+| `Curso de Python - ejercicios` | Ejercicios y apuntes de un curso de Python. |
+| `Tutoriales Programación Ya` | Material de práctica asociado a Tutoriales Programación Ya. |
 
 Los nombres de las carpetas identifican las fuentes o colecciones existentes; consulta cada recurso original para conocer su temario completo, idioma y requisitos.
 
