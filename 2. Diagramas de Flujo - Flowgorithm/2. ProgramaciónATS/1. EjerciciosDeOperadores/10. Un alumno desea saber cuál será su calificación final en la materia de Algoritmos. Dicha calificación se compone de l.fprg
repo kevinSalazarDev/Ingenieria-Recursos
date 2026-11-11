@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Ejercicio_10"/>
+        <attribute name="authors" value="K"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-07-23 10:36:52 p.&#160;m."/>
+        <attribute name="created" value="SztERVNLVE9QLTRPUjYzUUI7MjAyNi0wNy0yMzswOTo0OTo0OCBwLsKgbS47MjczOQ=="/>
+        <attribute name="edited" value="SztERVNLVE9QLTRPUjYzUUI7MjAyNi0wNy0yMzsxMDozNjo1MiBwLsKgbS47MjsyODMx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="parcial1, parcial2, parcial3, examenFinal, trabajoFinal, promedioParcial, notaParcial, notaExamen, notaTrabajo, notaFinal" type="Real" array="False" size=""/>
+            <output expression="&quot;Ingrese las 3 notas parciales:&quot;" newline="True"/>
+            <input variable="parcial1"/>
+            <input variable="parcial2"/>
+            <input variable="parcial3"/>
+            <output expression="&quot;Ingrese la nota del examen final:&quot;" newline="True"/>
+            <input variable="examenFinal"/>
+            <output expression="&quot;Ingrese la nota del trabajo final:&quot;" newline="True"/>
+            <input variable="trabajoFinal"/>
+            <assign variable="promedioParcial" expression="(parcial1+parcial2+parcial3)/3"/>
+            <assign variable="notaParcial" expression="promedioParcial*55/100"/>
+            <assign variable="notaExamen" expression="ExamenFinal*30/100"/>
+            <assign variable="notaTrabajo" expression="trabajoFinal*15/100"/>
+            <assign variable="notaFinal" expression="notaParcial+notaExamen+notaTrabajo"/>
+            <output expression="&quot;La nota final es: &quot; &amp; notaFinal" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

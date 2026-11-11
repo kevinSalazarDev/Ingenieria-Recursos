@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="10_divisible_para_2"/>
+        <attribute name="authors" value="K"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-07-30 09:55:33 p.&#160;m."/>
+        <attribute name="created" value="SztERVNLVE9QLTRPUjYzUUI7MjAyNi0wNy0zMDswOToyNTo0NCBwLsKgbS47MjcyNw=="/>
+        <attribute name="edited" value="SztERVNLVE9QLTRPUjYzUUI7MjAyNi0wNy0zMDswOTo1NTozMyBwLsKgbS47NTsyODQw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n" type="Integer" array="False" size=""/>
+            <output expression="&quot;Ingrese el n&#250;mero para comprobar si es divisible para 2&quot;" newline="True"/>
+            <input variable="n"/>
+            <if expression="n % 2 == 0">
+                <then>
+                    <output expression="&quot;El n&#250;mero &quot; &amp; n &amp; &quot; si es divisible para 2&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;El n&#250;mero &quot; &amp; n &amp; &quot; no es divisible para 2&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="3.1"/>
+        <attribute name="authors" value="K"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-07-08 02:05:16 p.&#160;m."/>
+        <attribute name="created" value="SztERVNLVE9QLTRPUjYzUUI7MjAyNi0wNy0wODswMTo0MzoxMyBwLsKgbS47MjcyMA=="/>
+        <attribute name="edited" value="SztERVNLVE9QLTRPUjYzUUI7MjAyNi0wNy0wODswMjowNToxNiBwLsKgbS47NTsyODM0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="edadPersona" type="Integer" array="False" size=""/>
+            <input variable="edadPersona"/>
+            <declare name="edadMinimaEjercito" type="Integer" array="False" size=""/>
+            <assign variable="edadMinimaEjercito" expression="18"/>
+            <if expression="edadPersona &gt;= 18">
+                <then>
+                    <output expression="&quot;ENHORABUENA, puede ingresar al ejercito&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Lo siento,debe esperar mas a&#241;os&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

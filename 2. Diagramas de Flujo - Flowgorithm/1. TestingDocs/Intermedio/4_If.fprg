@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="4_If"/>
+        <attribute name="authors" value="K"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-07-29 07:39:53 p.&#160;m."/>
+        <attribute name="created" value="SztERVNLVE9QLTRPUjYzUUI7MjAyNi0wNy0yOTswNzozMzo1OSBwLsKgbS47MjczOA=="/>
+        <attribute name="edited" value="SztERVNLVE9QLTRPUjYzUUI7MjAyNi0wNy0yOTswNzozOTo1MyBwLsKgbS47MzsyODQ4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n1, n2" type="Real" array="False" size=""/>
+            <output expression="&quot;Ingrese el primer n&#250;mero:&quot;" newline="True"/>
+            <input variable="n1"/>
+            <output expression="&quot;Ingrese el segundo n&#250;mero:&quot;" newline="True"/>
+            <input variable="n2"/>
+            <if expression="n1 &gt; n2">
+                <then>
+                    <output expression="&quot;El n&#250;mero &quot; &amp; n1 &amp; &quot; es mayor&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="n1==n2">
+                        <then>
+                            <output expression="&quot;Los dos n&#250;meros son iguales&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;El n&#250;mero &quot; &amp; n2 &amp; &quot; es mayor&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

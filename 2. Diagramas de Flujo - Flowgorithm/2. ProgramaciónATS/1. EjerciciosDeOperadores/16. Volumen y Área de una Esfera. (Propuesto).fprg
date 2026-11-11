@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Ejercicio_16"/>
+        <attribute name="authors" value="K"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-07-28 08:22:12 p.&#160;m."/>
+        <attribute name="created" value="SztERVNLVE9QLTRPUjYzUUI7MjAyNi0wNy0yODswODoxMzozMCBwLsKgbS47MjcyNQ=="/>
+        <attribute name="edited" value="SztERVNLVE9QLTRPUjYzUUI7MjAyNi0wNy0yODswODoyMjoxMiBwLsKgbS47MjsyODM0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="radio, volumen, area" type="Real" array="False" size=""/>
+            <output expression="&quot;Ingrese el radio de la esfera:&quot;" newline="True"/>
+            <input variable="radio"/>
+            <assign variable="volumen" expression="4/3*pi*radio^3"/>
+            <assign variable="area" expression="4*pi*radio^2"/>
+            <output expression="&quot;El volumen de la esfera es: &quot; &amp; volumen &amp; &quot; u^3&quot;" newline="True"/>
+            <output expression="&quot;El &#225;rea de la esfera es: &quot; &amp; area &amp; &quot; u^2&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

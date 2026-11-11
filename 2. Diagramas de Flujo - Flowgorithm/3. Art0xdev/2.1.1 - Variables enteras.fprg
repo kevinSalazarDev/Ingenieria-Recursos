@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="2.1.1"/>
+        <attribute name="authors" value="K"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-06-21 10:45:55 a.&#160;m."/>
+        <attribute name="created" value="SztERVNLVE9QLTRPUjYzUUI7MjAyNi0wNi0yMTsxMDo0MTo0NyBhLsKgbS47MjcwNA=="/>
+        <attribute name="edited" value="SztERVNLVE9QLTRPUjYzUUI7MjAyNi0wNi0yMTsxMDo0NTo1NSBhLsKgbS47MTsyODE1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="edadPedro" type="Integer" array="False" size=""/>
+            <assign variable="edadPedro" expression="26"/>
+            <declare name="edadAntonio" type="Integer" array="False" size=""/>
+            <assign variable="edadAntonio" expression="16"/>
+            <declare name="sumaEdades" type="Integer" array="False" size=""/>
+            <assign variable="sumaEdades" expression="edadPedro+edadAntonio"/>
+        </body>
+    </function>
+</flowgorithm>

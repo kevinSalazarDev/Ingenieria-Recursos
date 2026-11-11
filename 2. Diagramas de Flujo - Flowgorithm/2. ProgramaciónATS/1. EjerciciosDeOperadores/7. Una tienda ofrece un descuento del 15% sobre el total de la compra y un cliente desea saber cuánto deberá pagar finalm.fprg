@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Ejercicio_7"/>
+        <attribute name="authors" value="K"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-07-23 09:31:59 p.&#160;m."/>
+        <attribute name="created" value="SztERVNLVE9QLTRPUjYzUUI7MjAyNi0wNy0yMzswOTowNjoxMyBwLsKgbS47MjcyNA=="/>
+        <attribute name="edited" value="SztERVNLVE9QLTRPUjYzUUI7MjAyNi0wNy0yMzswOTozMTo1OSBwLsKgbS47MjsyODQx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="precio, precioTotalDescuento" type="Real" array="False" size=""/>
+            <output expression="&quot;Ingrese el precio del producto:&quot;" newline="True"/>
+            <input variable="precio"/>
+            <assign variable="precioTotalDescuento" expression="Precio - (precio*15)/100"/>
+            <output expression="&quot;El precio total con descuento del 15% es : &quot; &amp; precioTotalDescuento" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

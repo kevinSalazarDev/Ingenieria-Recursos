@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="2.2"/>
+        <attribute name="authors" value="K"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-06-21 11:30:54 a.&#160;m."/>
+        <attribute name="created" value="SztERVNLVE9QLTRPUjYzUUI7MjAyNi0wNi0yMTsxMToyMzoyOSBhLsKgbS47MjcwNQ=="/>
+        <attribute name="edited" value="SztERVNLVE9QLTRPUjYzUUI7MjAyNi0wNi0yMTsxMTozMDo1NCBhLsKgbS47MTsyODA5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="precioLambo" type="Real" array="False" size=""/>
+            <assign variable="precioLambo" expression="250000.50"/>
+            <declare name="precioFerrari" type="Real" array="False" size=""/>
+            <assign variable="precioFerrari" expression="1000000.10"/>
+            <declare name="sumaSuperDeportivos" type="Real" array="False" size=""/>
+            <assign variable="sumaSuperDeportivos" expression="precioLambo + precioFerrari"/>
+        </body>
+    </function>
+</flowgorithm>

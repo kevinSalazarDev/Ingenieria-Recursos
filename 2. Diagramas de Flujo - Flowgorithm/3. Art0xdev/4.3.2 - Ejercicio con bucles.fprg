@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="4.3.1_for"/>
+        <attribute name="authors" value="K"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-11-07 10:51:19 p.&#160;m."/>
+        <attribute name="created" value="SztERVNLVE9QLTRPUjYzUUI7MjAyNi0wOC0yNDswNTowMDo0MSBwLsKgbS47MjcxNw=="/>
+        <attribute name="edited" value="SztERVNLVE9QLTRPUjYzUUI7MjAyNi0xMS0wNzsxMDo1MToxOSBwLsKgbS47MTE7Mjg3Ng=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nombresPonentes" type="String" array="True" size="5"/>
+            <declare name="contador" type="Integer" array="False" size=""/>
+            <declare name="nombrePonente" type="String" array="False" size=""/>
+            <for variable="contador" start="0" end="4" direction="inc" step="1">
+                <output expression="&quot;Ingrese el nombre del ponente: &quot;" newline="True"/>
+                <input variable="nombrePonente"/>
+                <assign variable="nombresPonentes[contador]" expression="nombrePonente"/>
+            </for>
+            <declare name="busqueda" type="String" array="False" size=""/>
+            <output expression="&quot;Ingrese el nombre del ponente que desea buscar: &quot;" newline="True"/>
+            <input variable="busqueda"/>
+            <declare name="contador2" type="Integer" array="False" size=""/>
+            <assign variable="contador2" expression="0"/>
+            <declare name="encontrado" type="Boolean" array="False" size=""/>
+            <assign variable="encontrado" expression="false"/>
+            <breakpoint expression="" always="True"/>
+            <while expression="contador2 &lt; 5 &amp;&amp; encontrado == false">
+                <if expression="nombresPonentes[contador2] == busqueda">
+                    <then>
+                        <assign variable="encontrado" expression="true"/>
+                    </then>
+                    <else/>
+                </if>
+                <assign variable="contador2" expression="contador2 + 1"/>
+            </while>
+            <if expression="encontrado == true">
+                <then>
+                    <output expression="&quot;Hemos encontrado al usuario &quot; &amp; busqueda &amp; &quot; la ponencia es la n&#250;mero: &quot; &amp; contador2" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;No hemos encontrado al usuario &quot; &amp; busqueda" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

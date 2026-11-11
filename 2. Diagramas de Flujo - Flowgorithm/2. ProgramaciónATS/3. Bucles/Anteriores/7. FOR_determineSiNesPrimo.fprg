@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="7. FOR_determineSiNesPrimo"/>
+        <attribute name="authors" value="K"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-08-11 10:14:06 p.&#160;m."/>
+        <attribute name="created" value="SztERVNLVE9QLTRPUjYzUUI7MjAyNi0wOC0xMTswOTo1MDowNSBwLsKgbS47MjcyMg=="/>
+        <attribute name="edited" value="SztERVNLVE9QLTRPUjYzUUI7MjAyNi0wOC0xMTsxMDoxNDowNiBwLsKgbS47MTI7Mjg3Mw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, i, conteo" type="Integer" array="False" size=""/>
+            <assign variable="conteo" expression="0"/>
+            <output expression="&quot;Digite un n&#250;mero:&quot;" newline="True"/>
+            <input variable="n"/>
+            <if expression="n=1">
+                <then>
+                    <output expression="&quot;El n&#250;mero &quot; &amp;n&amp; &quot; no es primo&quot;" newline="True"/>
+                </then>
+                <else>
+                    <for variable="i" start="1" end="n" direction="inc" step="1">
+                        <if expression="n mod i=0">
+                            <then>
+                                <assign variable="conteo" expression="conteo+1"/>
+                            </then>
+                            <else/>
+                        </if>
+                    </for>
+                    <if expression="conteo=2">
+                        <then>
+                            <output expression="&quot;El n&#250;mero &quot; &amp;n&amp; &quot; si es primo&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;El n&#250;mero &quot; &amp;n&amp; &quot; no es primo&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

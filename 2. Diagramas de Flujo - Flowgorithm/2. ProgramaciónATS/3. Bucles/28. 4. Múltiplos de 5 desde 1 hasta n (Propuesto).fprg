@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="28. 3. M&#250;ltiplos de 3 desde 1 hasta n"/>
+        <attribute name="authors" value="K"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-11-08 04:25:10 p.&#160;m."/>
+        <attribute name="created" value="SztERVNLVE9QLTRPUjYzUUI7MjAyNi0xMS0wODswNDoxNDo1OCBwLsKgbS47MjcyNQ=="/>
+        <attribute name="edited" value="SztERVNLVE9QLTRPUjYzUUI7MjAyNi0xMS0wODswNDoyNToxMCBwLsKgbS47NDsyODI2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numero, contador" type="Integer" array="False" size=""/>
+            <output expression="&quot;Ingrese un n&#250;mero: &quot;" newline="True"/>
+            <input variable="numero"/>
+            <for variable="contador" start="1" end="numero" direction="inc" step="1">
+                <if expression="contador mod 5 = 0">
+                    <then>
+                        <output expression="&quot;El n&#250;mero &quot;&amp;contador&amp;&quot; es m&#250;ltiplo de 5&quot;" newline="True"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

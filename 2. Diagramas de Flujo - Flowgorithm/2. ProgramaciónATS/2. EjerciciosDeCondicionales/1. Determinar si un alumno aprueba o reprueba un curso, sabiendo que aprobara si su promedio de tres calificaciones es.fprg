@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Problema_1_aprobar"/>
+        <attribute name="authors" value="K"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-08-03 05:42:12 p.&#160;m."/>
+        <attribute name="created" value="SztERVNLVE9QLTRPUjYzUUI7MjAyNi0wOC0wMzswNTozNToyMSBwLsKgbS47MjcyMA=="/>
+        <attribute name="edited" value="SztERVNLVE9QLTRPUjYzUUI7MjAyNi0wOC0wMzswNTo0MjoxMiBwLsKgbS47MzsyODI4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nota1, nota2, nota3, promedio" type="Real" array="False" size=""/>
+            <output expression="&quot;Ingrese sus tres notas:&quot;" newline="True"/>
+            <input variable="nota1"/>
+            <input variable="nota2"/>
+            <input variable="nota3"/>
+            <assign variable="promedio" expression="(nota1+nota2+nota3)/3"/>
+            <if expression="promedio &gt;= 10.5">
+                <then>
+                    <output expression="&quot;Aprobado con: &quot; &amp; promedio" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Desaprobado con: &quot; &amp; promedio" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

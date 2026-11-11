@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Ejercicio_3"/>
+        <attribute name="authors" value="K"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-07-23 07:53:59 p.&#160;m."/>
+        <attribute name="created" value="SztERVNLVE9QLTRPUjYzUUI7MjAyNi0wNy0yMzswNzoyMzoxNCBwLsKgbS47MjcyMg=="/>
+        <attribute name="edited" value="SztERVNLVE9QLTRPUjYzUUI7MjAyNi0wNy0yMzswNzo1Mzo1OSBwLsKgbS47NDsyODQ1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="c1, c2, hip" type="Real" array="False" size=""/>
+            <output expression="&quot;Ingrese el cateto opuesto:&quot;" newline="True"/>
+            <input variable="c1"/>
+            <output expression="&quot;Ingrese el cateto adyacente:&quot;" newline="True"/>
+            <input variable="c2"/>
+            <assign variable="hip" expression="sqrt ((c1)^2 + (c2)^2)"/>
+            <output expression="&quot;La hipotenusa del triangulo rectangulo es: &quot; &amp; hip" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

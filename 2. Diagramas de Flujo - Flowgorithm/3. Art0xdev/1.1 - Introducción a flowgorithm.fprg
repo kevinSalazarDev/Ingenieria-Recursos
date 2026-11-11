@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="youtube 1"/>
+        <attribute name="authors" value="K"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-07-08 12:28:54 p.&#160;m."/>
+        <attribute name="created" value="SztERVNLVE9QLTRPUjYzUUI7MjAyNi0wNi0yMDsxMDoxMjoxNSBwLsKgbS47MjcxMQ=="/>
+        <attribute name="edited" value="SztERVNLVE9QLTRPUjYzUUI7MjAyNi0wNy0wODsxMjoyODo1NCBwLsKgbS47MzsyODQw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nacimientoPedro" type="Integer" array="False" size=""/>
+            <assign variable="nacimientoPedro" expression="2007"/>
+            <declare name="a&#241;oActual" type="Integer" array="False" size=""/>
+            <assign variable="a&#241;oActual" expression="2020"/>
+            <declare name="edadCarnetConducir" type="Integer" array="False" size=""/>
+            <assign variable="edadCarnetConducir" expression="18"/>
+            <declare name="edadPedro" type="Integer" array="False" size=""/>
+            <assign variable="edadPedro" expression="a&#241;oActual - nacimientoPedro"/>
+            <if expression="edadPedro &gt;= edadCarnetConducir">
+                <then>
+                    <output expression="&quot;PEDRO SI PUEDE SACARSE EL CARNET DE CONDUCIR&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;PEDRO NO PUEDE SACARSE EL CARNET DE CONDUCIR&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

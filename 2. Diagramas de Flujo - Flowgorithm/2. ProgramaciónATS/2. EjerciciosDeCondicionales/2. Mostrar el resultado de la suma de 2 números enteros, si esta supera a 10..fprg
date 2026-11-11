@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Problema_2_suma_de_dos_numeros"/>
+        <attribute name="authors" value="K"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-08-03 06:01:41 p.&#160;m."/>
+        <attribute name="created" value="SztERVNLVE9QLTRPUjYzUUI7MjAyNi0wOC0wMzswNTo0Mjo1MSBwLsKgbS47MjcyMQ=="/>
+        <attribute name="edited" value="SztERVNLVE9QLTRPUjYzUUI7MjAyNi0wOC0wMzswNjowMTo0MSBwLsKgbS47MjsyODI1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n1, n2, suma" type="Real" array="False" size=""/>
+            <output expression="&quot;Ingrese el primer n&#250;mero:&quot;" newline="True"/>
+            <input variable="n1"/>
+            <output expression="&quot;Ingrese el segundo n&#250;mero:&quot;" newline="True"/>
+            <input variable="n2"/>
+            <assign variable="suma" expression="n1+n2"/>
+            <if expression="suma &gt; 10">
+                <then>
+                    <output expression="&quot;La suma de los dos n&#250;meros es: &quot; &amp; suma" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;La suma es menor a 10&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

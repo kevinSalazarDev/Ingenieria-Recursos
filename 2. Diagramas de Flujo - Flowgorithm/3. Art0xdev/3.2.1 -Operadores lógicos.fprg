@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="3.2.1"/>
+        <attribute name="authors" value="K"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-07-08 05:38:18 p.&#160;m."/>
+        <attribute name="created" value="SztERVNLVE9QLTRPUjYzUUI7MjAyNi0wNy0wODswNToxODo1MyBwLsKgbS47MjczMA=="/>
+        <attribute name="edited" value="SztERVNLVE9QLTRPUjYzUUI7MjAyNi0wNy0wODswNTozODoxOCBwLsKgbS47MTsyODQx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="edadPersona" type="Integer" array="False" size=""/>
+            <input variable="edadPersona"/>
+            <declare name="paisDeNacimiento" type="String" array="False" size=""/>
+            <input variable="paisDeNacimiento"/>
+            <if expression="edadPersona &gt;=18 &amp;&amp; paisDeNacimiento &#13;&#10;=&quot;Ecuador&quot;">
+                <then>
+                    <output expression="&quot;Enhorabuena, cumple con las condiciones para entrar al ejercito ecuatoriano&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Lo sentimos, no cumple con las condiciones para entrar al ejercito ecuatoriano&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

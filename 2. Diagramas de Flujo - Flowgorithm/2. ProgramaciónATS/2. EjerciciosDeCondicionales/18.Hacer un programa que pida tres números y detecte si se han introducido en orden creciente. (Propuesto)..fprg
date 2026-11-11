@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Problema_18_tresNumerosCreciente"/>
+        <attribute name="authors" value="K"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-08-07 10:53:14 p.&#160;m."/>
+        <attribute name="created" value="SztERVNLVE9QLTRPUjYzUUI7MjAyNi0wOC0wNzsxMDo0ODoyNCBwLsKgbS47MjcyNw=="/>
+        <attribute name="edited" value="SztERVNLVE9QLTRPUjYzUUI7MjAyNi0wOC0wNzsxMDo1MzoxNCBwLsKgbS47MjsyODMx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n1, n2, n3" type="Real" array="False" size=""/>
+            <output expression="&quot;Ingrese tres n&#250;meros:&quot;" newline="True"/>
+            <input variable="n1"/>
+            <input variable="n2"/>
+            <input variable="n3"/>
+            <if expression="n1&lt;n2 and n2&lt;n3">
+                <then>
+                    <output expression="&quot;Se ha ingresado los n&#250;meros correctamente&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;No se ha ingresado los n&#250;meros correctamente&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

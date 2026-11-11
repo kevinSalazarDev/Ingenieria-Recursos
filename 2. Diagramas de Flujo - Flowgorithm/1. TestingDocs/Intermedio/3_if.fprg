@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="3"/>
+        <attribute name="authors" value="K"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-07-29 07:21:59 p.&#160;m."/>
+        <attribute name="created" value="SztERVNLVE9QLTRPUjYzUUI7MjAyNi0wNy0yOTswNzoxODozNyBwLsKgbS47MjczNw=="/>
+        <attribute name="edited" value="SztERVNLVE9QLTRPUjYzUUI7MjAyNi0wNy0yOTswNzoyMTo1OSBwLsKgbS47MzsyODQ1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nota" type="Real" array="False" size=""/>
+            <output expression="&quot;Ingrese su nota:&quot;" newline="True"/>
+            <input variable="nota"/>
+            <if expression="nota &gt;= 40">
+                <then>
+                    <output expression="&quot;Aprobado&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Suspendido&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="1. SumaDeLos5PrimerosNumeros"/>
+        <attribute name="authors" value="K"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-08-08 10:52:12 p.&#160;m."/>
+        <attribute name="created" value="SztERVNLVE9QLTRPUjYzUUI7MjAyNi0wOC0wODswNzo1MTozMiBwLsKgbS47MjcyNw=="/>
+        <attribute name="edited" value="SztERVNLVE9QLTRPUjYzUUI7MjAyNi0wOC0wODsxMDo1MjoxMiBwLsKgbS47Mjk7Mjg4Ng=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, suma" type="Integer" array="False" size=""/>
+            <assign variable="suma" expression="0"/>
+            <for variable="i" start="1" end="5" direction="inc" step="1">
+                <assign variable="suma" expression="suma+i"/>
+            </for>
+            <output expression="&quot;La suma de los n&#250;meros del 1 al 5 es: &quot; &amp; suma" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

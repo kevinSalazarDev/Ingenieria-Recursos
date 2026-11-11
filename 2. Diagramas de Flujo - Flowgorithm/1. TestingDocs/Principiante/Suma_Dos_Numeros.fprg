@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Suma_Dos_Numeros"/>
+        <attribute name="authors" value="K"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-07-23 05:56:21 p.&#160;m."/>
+        <attribute name="created" value="SztERVNLVE9QLTRPUjYzUUI7MjAyNi0wNy0yMzswMzoxOToxMSBwLsKgbS47MjcyMA=="/>
+        <attribute name="edited" value="SztERVNLVE9QLTRPUjYzUUI7MjAyNi0wNy0yMzswNTo1NjoyMSBwLsKgbS47MTsyODMy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num1, num2, resultado" type="Integer" array="False" size=""/>
+            <output expression="&quot;Ingrese dos n&#250;meros: &quot;" newline="True"/>
+            <input variable="num1"/>
+            <input variable="num2"/>
+            <assign variable="resultado" expression="num1 + num2"/>
+            <output expression="&quot;El resultado de la suma es: &quot; &amp; resultado" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

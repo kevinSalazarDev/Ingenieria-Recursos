@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="29. 5. Sumar 1-2+3-4..."/>
+        <attribute name="authors" value="K"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-11-09 02:44:58 p.&#160;m."/>
+        <attribute name="created" value="SztERVNLVE9QLTRPUjYzUUI7MjAyNi0xMS0wOTswMjoxNzowNyBwLsKgbS47MjcyMQ=="/>
+        <attribute name="edited" value="SztERVNLVE9QLTRPUjYzUUI7MjAyNi0xMS0wOTswMjo0NDo1OCBwLsKgbS47MTA7Mjg4Mw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, m, contador, suma" type="Integer" array="False" size=""/>
+            <assign variable="n" expression="0"/>
+            <assign variable="m" expression="0"/>
+            <assign variable="suma" expression="0"/>
+            <output expression="&quot;Ingrese n: &quot;" newline="True"/>
+            <input variable="n"/>
+            <output expression="&quot;Ingrese m: &quot;" newline="True"/>
+            <input variable="m"/>
+            <for variable="contador" start="n" end="m" direction="inc" step="1">
+                <if expression="contador mod 2 = 0">
+                    <then>
+                        <assign variable="suma" expression="suma + contador"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <output expression="suma" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

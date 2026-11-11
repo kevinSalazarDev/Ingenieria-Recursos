@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="4.3.1_for"/>
+        <attribute name="authors" value="K"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-08-24 05:10:29 p.&#160;m."/>
+        <attribute name="created" value="SztERVNLVE9QLTRPUjYzUUI7MjAyNi0wOC0yNDswNTowMDo0MSBwLsKgbS47MjcxNw=="/>
+        <attribute name="edited" value="SztERVNLVE9QLTRPUjYzUUI7MjAyNi0wOC0yNDswNToxMDoyOSBwLsKgbS47NTsyODM2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nombresPonentes" type="String" array="True" size="5"/>
+            <declare name="contador" type="Integer" array="False" size=""/>
+            <declare name="nombrePonente" type="String" array="False" size=""/>
+            <for variable="contador" start="0" end="4" direction="inc" step="1">
+                <output expression="&quot;Ingrese el nombre del ponente: &quot;" newline="True"/>
+                <input variable="nombrePonente"/>
+                <assign variable="nombresPonentes[contador]" expression="nombrePonente"/>
+            </for>
+            <declare name="busqueda" type="String" array="False" size=""/>
+            <output expression="&quot;Ingrese el nombre del ponente que desea buscar: &quot;" newline="True"/>
+            <input variable="busqueda"/>
+            <declare name="contador2" type="Integer" array="False" size=""/>
+            <for variable="contador2" start="0" end="4" direction="inc" step="1">
+                <if expression="nombresPonentes[contador2]==busqueda">
+                    <then>
+                        <output expression="&quot;La b&#250;squeda es correcta, se ha encontrado al ponente: &quot; &amp;busqueda&amp; &quot; ser&#225; el ponente n&#250;mero:&quot; &amp;contador+1" newline="True"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

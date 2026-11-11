@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="2.3"/>
+        <attribute name="authors" value="K"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-06-21 12:14:33 p.&#160;m."/>
+        <attribute name="created" value="SztERVNLVE9QLTRPUjYzUUI7MjAyNi0wNi0yMTsxMTo0MzoxNyBhLsKgbS47MjcwNA=="/>
+        <attribute name="edited" value="SztERVNLVE9QLTRPUjYzUUI7MjAyNi0wNi0yMTsxMjoxNDozMyBwLsKgbS47MTsyODI0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nombreUsuario" type="String" array="False" size=""/>
+            <assign variable="nombreUsuario" expression="&quot;Pedro&quot;"/>
+            <declare name="apellidoUsuario" type="String" array="False" size=""/>
+            <assign variable="apellidoUsuario" expression="&quot;Garc&#237;a&quot;"/>
+            <declare name="textoComoSeLlamaElUsuario" type="String" array="False" size=""/>
+            <assign variable="textoComoSeLlamaElUsuario" expression="&quot;El usuario se llama: &quot;"/>
+            <output expression="textoComoSeLlamaElUsuario &amp; nombreUsuario &amp; &quot; &quot; &amp; apellidoUsuario" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

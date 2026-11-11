@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Ejercicio_6"/>
+        <attribute name="authors" value="K"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-07-23 08:50:48 p.&#160;m."/>
+        <attribute name="created" value="SztERVNLVE9QLTRPUjYzUUI7MjAyNi0wNy0yMzswODoxMjo0MiBwLsKgbS47MjcyMg=="/>
+        <attribute name="edited" value="SztERVNLVE9QLTRPUjYzUUI7MjAyNi0wNy0yMzswODo1MDo0OCBwLsKgbS47MTsyODM4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n1, n2, n3, media" type="Real" array="False" size=""/>
+            <output expression="&quot;Ingrese el primer numero:&quot;" newline="True"/>
+            <input variable="n1"/>
+            <output expression="&quot;Ingrese el segundo numero:&quot;" newline="True"/>
+            <input variable="n2"/>
+            <output expression="&quot;Ingrese el tercer numero&quot;" newline="True"/>
+            <input variable="n3"/>
+            <assign variable="media" expression="(n1 + n2 + n3) / 3"/>
+            <output expression="&quot;La media aritmetica de los numeros es: &quot; &amp; media" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="3.2"/>
+        <attribute name="authors" value="K"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-07-08 04:21:07 p.&#160;m."/>
+        <attribute name="created" value="SztERVNLVE9QLTRPUjYzUUI7MjAyNi0wNy0wODswMzo1NDoyOSBwLsKgbS47MjczMQ=="/>
+        <attribute name="edited" value="SztERVNLVE9QLTRPUjYzUUI7MjAyNi0wNy0wODswNDoyMTowNyBwLsKgbS47MjsyODMx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <if expression="&quot;Juan&quot; == &quot;Pedro&quot;">
+                <then>
+                    <output expression="&quot;Es correcto&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Es incorrecto&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

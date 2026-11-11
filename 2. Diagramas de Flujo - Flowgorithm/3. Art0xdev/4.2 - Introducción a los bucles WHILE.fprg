@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="4.2 Bucles-While"/>
+        <attribute name="authors" value="K"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-08-08 08:58:20 p.&#160;m."/>
+        <attribute name="created" value="SztERVNLVE9QLTRPUjYzUUI7MjAyNi0wOC0wODswODozOTozMyBwLsKgbS47MjczNQ=="/>
+        <attribute name="edited" value="SztERVNLVE9QLTRPUjYzUUI7MjAyNi0wOC0wODswODo1ODoyMCBwLsKgbS47MTsyODQw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="listaPonentes" type="String" array="True" size="5"/>
+            <assign variable="listaPonentes[0]" expression="&quot;Pedro&quot;"/>
+            <assign variable="listaPonentes[1]" expression="&quot;Arturo&quot;"/>
+            <assign variable="listaPonentes[2]" expression="&quot;Miguel&quot;"/>
+            <assign variable="listaPonentes[3]" expression="&quot;Roberto&quot;"/>
+            <assign variable="listaPonentes[4]" expression="&quot;Victor&quot;"/>
+            <declare name="contador" type="Integer" array="False" size=""/>
+            <assign variable="contador" expression="0"/>
+            <while expression="contador &lt; 5">
+                <output expression="&quot;El oponente es &quot; &amp; listaPonentes[contador]" newline="True"/>
+                <assign variable="contador" expression="contador+1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

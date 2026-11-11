@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="4.3 For"/>
+        <attribute name="authors" value="K"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-08-24 04:30:38 p.&#160;m."/>
+        <attribute name="created" value="SztERVNLVE9QLTRPUjYzUUI7MjAyNi0wOC0yNDswNDoyNTo1NCBwLsKgbS47MjcyNw=="/>
+        <attribute name="edited" value="SztERVNLVE9QLTRPUjYzUUI7MjAyNi0wOC0yNDswNDozMDozOCBwLsKgbS47MzsyODM1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nuestroTexto" type="String" array="False" size=""/>
+            <output expression="&quot;Ingrese un texto: &quot;" newline="True"/>
+            <input variable="nuestroTexto"/>
+            <declare name="contador" type="Integer" array="False" size=""/>
+            <declare name="numeroDeVeces" type="Integer" array="False" size=""/>
+            <output expression="&quot;Ingrese el n&#250;mero de veces: &quot;" newline="True"/>
+            <input variable="numeroDeVeces"/>
+            <for variable="contador" start="1" end="5" direction="inc" step="1">
+                <output expression="nuestroTexto" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

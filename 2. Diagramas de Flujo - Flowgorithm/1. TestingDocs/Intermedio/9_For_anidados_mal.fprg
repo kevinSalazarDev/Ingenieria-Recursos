@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="9_For_anidados"/>
+        <attribute name="authors" value="K"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-07-30 09:23:03 p.&#160;m."/>
+        <attribute name="created" value="SztERVNLVE9QLTRPUjYzUUI7MjAyNi0wNy0zMDswOTowMzo1OCBwLsKgbS47MjcyOA=="/>
+        <attribute name="edited" value="SztERVNLVE9QLTRPUjYzUUI7MjAyNi0wNy0zMDswOToyMzowMyBwLsKgbS47NTsyODMy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="N, i, j" type="Integer" array="False" size=""/>
+            <declare name="dibujeCaracter" type="String" array="False" size=""/>
+            <assign variable="dibujeCaracter" expression="&quot;*&quot;"/>
+            <output expression="&quot;Ingrese el n&#250;mero de filas&quot;" newline="True"/>
+            <input variable="N"/>
+            <for variable="i" start="1" end="N" direction="inc" step="1">
+                <for variable="j" start="1" end="N" direction="inc" step="1">
+                    <output expression="dibujeCaracter" newline="True"/>
+                </for>
+                <output expression="&quot; &quot;" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

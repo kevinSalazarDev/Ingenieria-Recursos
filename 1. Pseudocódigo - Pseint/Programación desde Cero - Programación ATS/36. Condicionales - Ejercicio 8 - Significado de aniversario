@@ -1,0 +1,24 @@
+//Elaborar un programa que me muestre el seginficado de
+//aniversario de cada década hasta los 60.(Diagrama de Flujo)
+
+Proceso ejercicio8
+	Definir decada como entero;
+	
+	Escribir "Ingrese una década (10-60)años: ";
+	Leer decada;
+	
+	Segun decada Hacer
+		10: escribir "Bodas de Hojalata";
+		20: escribir "Bodas de Porcelana";
+		30: escribir "Bodas de Perlas";
+		40: escribir "Bodas de Rubí";
+		50: escribir "Bodas de Oro";
+		60: escribir "Bodas de Diamante";
+		De Otro Modo:
+			Escribir "El valor es incorrecto";
+	FinSegun
+	
+	
+
+	
+FinProceso

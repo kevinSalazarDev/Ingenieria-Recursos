@@ -1,0 +1,15 @@
+﻿# Archivos temporales y caché de Python
+__pycache__/
+*.py[cod]
+
+# Entornos virtuales
+.venv/
+venv/
+
+# Variables de entorno y credenciales
+.env
+.env.*
+
+# Archivos temporales de Windows
+Thumbs.db
+Desktop.ini
