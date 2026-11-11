@@ -9,7 +9,7 @@ function Fail($message) {
 }
 
 try {
-    $repo = Split-Path -Parent $MyInvocation.MyCommand.Path
+    $repo = Split-Path -Parent (Split-Path -Parent $MyInvocation.MyCommand.Path)
     Set-Location $repo
 
     if (-not (Test-Path (Join-Path $repo ".git"))) {
