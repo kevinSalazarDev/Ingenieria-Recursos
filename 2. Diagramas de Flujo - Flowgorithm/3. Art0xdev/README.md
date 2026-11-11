@@ -1,10 +1,10 @@
-#  Programación desde cero con Diagramas de Flujo || ProgramaciónATS
+# Aprendiendo la lógica de la programación desde CERO - 2025 - Art0xdev
 
 Material de estudio y ejercicios realizados durante el curso.
 
 ## Curso original
 
-[Ver curso completo en YouTube - Programación ATS](https://www.youtube.com/watch?v=KBC5mhbiy6Y&list=PLWtYZ2ejMVJnpjQFWykrPcVOycJLVP2cG&pp=0gcJCW4DOCosWNin)
+[Ver curso completo en YouTube - Programación ATS](https://www.youtube.com/watch?v=_Sp8pwd0LOs&list=PLDLnmbUDWFUtFTqLf_lS99z2gmYU5ouRv&index=2)
 
 ## Contenido
 
