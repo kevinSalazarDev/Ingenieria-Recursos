@@ -1,5 +1,7 @@
 # Biblioteca abierta de programación e ingeniería
 
+[![Comprobación de sintaxis Python](https://github.com/kevinSalazarDev/Programacion/actions/workflows/python-syntax.yml/badge.svg?branch=main)](https://github.com/kevinSalazarDev/Programacion/actions/workflows/python-syntax.yml)
+
 Recursos, cursos, documentación y ejercicios gratuitos para aprender desde cero, practicar y avanzar con una ruta de estudio clara.
 
 Este repositorio busca ayudar a estudiantes y personas autodidactas a encontrar **qué estudiar, en qué orden y dónde practicar**. Nace de la experiencia de estudiar Ingeniería en Tecnologías de la Información y está abierto a cualquier persona, institución o país.
