@@ -19,7 +19,7 @@ Un diagrama de flujo permite visualizar el orden de las instrucciones, las decis
 - [Documentación](http://www.flowgorithm.org/documentation/)
 - [Descarga](http://www.flowgorithm.org/download/index.html)
 
-Descarga el programa y consulta las instrucciones del sitio oficial. Los enlaces se conservan en HTTP porque así estaban registrados en el material original.
+Descarga el programa y consulta las instrucciones del sitio oficial.
 
 ## 📚 Cursos y ejercicios incluidos
 
@@ -37,7 +37,7 @@ Ejercicios de programación desde cero representados mediante diagramas de flujo
 
 ### 3. Art0xdev
 
-En esta carpeta se encuentra material de ejercicios y documentación atribuido a esta fuente. Revisa sus archivos y consulta la referencia original cuando esté disponible.
+Material de ejercicios y documentación atribuido a esta fuente. Revisa los archivos y consulta la referencia original cuando esté disponible.
 
 ## 🧭 Orden recomendado
 
@@ -48,7 +48,13 @@ En esta carpeta se encuentra material de ejercicios y documentación atribuido a
 5. Construye ciclos.
 6. Resuelve problemas que combinen varios elementos.
 
-Puedes complementar esta sección con los ejercicios de [PSeInt](../1.%20Pseudoc%C3%B3digo%20-%20Pseint/) y luego continuar con [Python](../3.%20Python/).
+Puedes complementar esta sección con los ejercicios de [PSeInt](../01%20-%20PSeInt%20y%20pseudoc%C3%B3digo/) y luego continuar con [Python](../03%20-%20Python/).
+
+## 📂 Organización
+
+- **TestingDocs:** carpetas de ejercicios de nivel principiante e intermedio.
+- **Programación ATS:** ejercicios agrupados por operadores, condicionales, ciclos y cursos.
+- **Art0xdev:** ejercicios organizados según los temas de sus lecciones.
 
 ## ✅ Cómo practicar
 
