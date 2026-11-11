@@ -1,60 +1,63 @@
-# Recursos gratuitos para aprender ingeniería y programación
+# Biblioteca abierta de programación e ingeniería
 
-Una biblioteca educativa abierta, gratuita y en crecimiento para aprender desde cero, practicar y encontrar una ruta de estudio.
+Recursos, cursos, documentación y ejercicios gratuitos para aprender desde cero, practicar y avanzar con una ruta de estudio clara.
 
-Este proyecto nace de una experiencia personal como estudiante de Ingeniería en Tecnologías de la Información: muchas veces queremos aprender, pero no sabemos qué estudiar primero, qué recursos utilizar o cómo avanzar sin perdernos entre tantos cursos y tutoriales.
+Este repositorio busca ayudar a estudiantes y personas autodidactas a encontrar **qué estudiar, en qué orden y dónde practicar**. Nace de la experiencia de estudiar Ingeniería en Tecnologías de la Información y está abierto a cualquier persona, institución o país.
 
-El objetivo es **reunir, organizar y contextualizar recursos educativos** para que cualquier persona pueda estudiar de forma autónoma. Está dirigido especialmente a estudiantes de la Universidad Estatal Amazónica (UEA), pero está abierto a estudiantes de cualquier institución y a personas que aprenden por su cuenta.
+> Proyecto educativo personal e independiente. No representa oficialmente a la Universidad Estatal Amazónica (UEA).
 
-> Proyecto educativo personal e independiente. No representa oficialmente a la Universidad Estatal Amazónica.
+## Comienza aquí
 
-## 📚 Áreas disponibles
+Si estás aprendiendo a programar, empieza por la guía de [Fundamentos de Programación](./Fundamentos%20de%20Programaci%C3%B3n/README.md).
 
-### Fundamentos de Programación
+| Área | Contenido | Guía |
+|---|---|---|
+| PSeInt y pseudocódigo | Lógica, algoritmos y ejercicios secuenciales | [Abrir materiales](./Fundamentos%20de%20Programaci%C3%B3n/01%20-%20PSeInt%20y%20pseudoc%C3%B3digo/) |
+| Diagramas de flujo | Representación visual de algoritmos con Flowgorithm | [Abrir materiales](./Fundamentos%20de%20Programaci%C3%B3n/02%20-%20Diagramas%20de%20flujo%20(Flowgorithm)/) |
+| Python | Cursos, ejemplos y ejercicios prácticos | [Abrir materiales](./Fundamentos%20de%20Programaci%C3%B3n/03%20-%20Python/) |
 
-Es el área inicial de la biblioteca. Reúne material para desarrollar el pensamiento lógico, comprender algoritmos y dar los primeros pasos programando.
+## Ruta de aprendizaje sugerida
 
-| Área | Qué encontrarás |
-|---|---|
-| [PSeInt y pseudocódigo](./Fundamentos%20de%20Programaci%C3%B3n/01%20-%20PSeInt%20y%20pseudoc%C3%B3digo/) | Algoritmos, pseudocódigo y ejercicios desde cero. |
-| [Diagramas de flujo - Flowgorithm](./Fundamentos%20de%20Programaci%C3%B3n/02%20-%20Diagramas%20de%20flujo%20(Flowgorithm)/) | Representación visual de algoritmos y ejercicios con diagramas. |
-| [Python](./Fundamentos%20de%20Programaci%C3%B3n/03%20-%20Python/) | Cursos, ejemplos y práctica con el lenguaje Python. |
+1. **Pensamiento computacional:** identifica entradas, procesos, decisiones y resultados.
+2. **Pseudocódigo:** escribe soluciones sin depender de la sintaxis de un lenguaje.
+3. **Diagramas de flujo:** visualiza secuencias, condiciones y ciclos.
+4. **Python:** implementa algoritmos en un lenguaje de programación real.
+5. **Práctica deliberada:** resuelve problemas sin mirar la solución y prueba casos límite.
+6. **Proyectos pequeños:** combina los conceptos para construir programas útiles.
 
-## 🧭 Ruta sugerida para comenzar
+No es obligatorio dominar una herramienta por completo antes de pasar a la siguiente. Lo importante es comprender la lógica y poder explicar tus decisiones.
 
-Si nunca has programado, puedes utilizar esta secuencia como orientación:
+## Cómo aprovechar la biblioteca
 
-1. **Pensamiento lógico:** aprende a dividir un problema en pasos.
-2. **Pseudocódigo con PSeInt:** expresa soluciones sin preocuparte todavía por la sintaxis de un lenguaje.
-3. **Diagramas de flujo:** representa visualmente las decisiones y los pasos de un algoritmo.
-4. **Python:** traslada la lógica aprendida a un lenguaje de programación real.
-5. **Práctica independiente:** resuelve ejercicios sin mirar la solución y explica cómo llegaste al resultado.
-6. **Pequeños proyectos:** combina lo aprendido para crear programas útiles.
+- Lee el README de cada sección antes de comenzar.
+- Escoge un curso principal y utiliza otros materiales como apoyo.
+- Consulta las fuentes originales para seguir las explicaciones completas.
+- Escribe y ejecuta los ejemplos por tu cuenta.
+- Prueba entradas normales, valores límite y casos inesperados.
+- No confundas que un programa se ejecute con que su lógica sea correcta.
 
-No es obligatorio completar todos los recursos de cada herramienta. Lo importante es comprender los conceptos y practicar. PSeInt y Flowgorithm son medios para aprender lógica; Python permite continuar hacia la programación de aplicaciones reales.
+## Calidad y estado de revisión
 
-## 🗂️ Cómo utilizar los materiales
+- Los archivos Python tienen una comprobación automática de **sintaxis** mediante GitHub Actions cuando se modifican.
+- La comprobación de sintaxis no ejecuta los programas ni demuestra que sus resultados sean correctos.
+- Los archivos PSeInt, Flowgorithm y DFD requieren validación en sus aplicaciones correspondientes.
+- Los materiales se revisan progresivamente; no se afirma que toda la colección esté completamente auditada.
 
-- Revisa el README de cada área antes de comenzar.
-- Sigue el orden sugerido, pero adapta el ritmo a tus conocimientos.
-- Consulta los cursos originales y respeta la autoría de sus creadores.
-- Intenta resolver los ejercicios por tu cuenta antes de consultar ejemplos.
-- Si encuentras un error, una liga rota o una explicación confusa, puedes comunicarlo mediante un issue.
+Puedes consultar el [informe de auditoría inicial](./AUDITORIA_INICIAL.md) para conocer los hallazgos y las correcciones registradas.
 
-## 🎯 Criterios de esta biblioteca
+## Principios del proyecto
 
-- **Accesibilidad:** priorizar recursos gratuitos y de acceso legal.
-- **Claridad:** explicar para qué sirve cada recurso y qué conocimientos requiere.
-- **Progresión:** ordenar los contenidos desde lo básico hacia lo avanzado.
+- **Accesibilidad:** priorizar materiales gratuitos y de acceso legal.
+- **Claridad:** explicar el propósito, el nivel y los requisitos de cada recurso.
+- **Progresión:** ordenar los temas desde los fundamentos hacia los más complejos.
 - **Práctica:** acompañar la teoría con ejercicios y proyectos.
 - **Atribución:** reconocer a los autores y enlazar las fuentes originales.
-- **Mejora continua:** revisar y actualizar los materiales conforme se detecten errores o mejores alternativas.
+- **Transparencia:** distinguir entre archivos revisados, probados y pendientes de validar.
+- **Mejora continua:** corregir errores sin eliminar material útil de forma precipitada.
 
-Que un recurso aparezca aquí no significa que haya sido creado por este proyecto ni que todos sus contenidos hayan sido auditados. Se procura identificar su fuente y mejorar gradualmente la selección.
+## Próximas áreas
 
-## 🚧 Próximas áreas
-
-La biblioteca crecerá progresivamente conforme avance el aprendizaje y se preparen materiales de calidad. Entre las áreas que podrían incorporarse están:
+La biblioteca crecerá de forma gradual, conforme se preparen guías y materiales de calidad. Algunas áreas futuras posibles son:
 
 - Matemáticas y matemática discreta.
 - Física.
@@ -65,21 +68,19 @@ La biblioteca crecerá progresivamente conforme avance el aprendizaje y se prepa
 - Ingeniería de software.
 - Ciberseguridad.
 
-Estas áreas son una dirección futura, no contenidos que ya estén completos.
+Estas áreas son una dirección futura; no significa que ya estén desarrolladas en el repositorio.
 
-## 🤝 Contribuciones
+## Contribuir
 
-Las sugerencias, correcciones y aportaciones son bienvenidas. Antes de proponer un recurso, procura incluir:
+Las correcciones, sugerencias y nuevos recursos son bienvenidos.
 
-- Nombre del curso, libro o documentación.
-- Autor o institución responsable.
-- Enlace a la fuente original.
-- Idioma y nivel aproximado.
-- Temas que cubre y requisitos previos.
-- Motivo por el que consideras que ayuda a aprender.
+- Lee la guía [Cómo contribuir](./CONTRIBUTING.md).
+- Propón un recurso con su autor, enlace original, idioma, nivel y requisitos.
+- Reporta errores indicando la ruta del archivo y cómo reproducirlos.
+- Respeta la autoría y las condiciones de uso de los materiales externos.
 
-## 👨‍💻 Sobre el proyecto
+Consulta también las [fuentes y atribuciones](./FUENTES_Y_ATRIBUCIONES.md).
 
-Este repositorio se desarrolla de forma independiente y crecerá junto con mi propio proceso de aprendizaje. La intención no es acumular enlaces, sino construir rutas y materiales que ayuden a otras personas a aprender con mayor orientación.
+## Autor
 
-Creado por [kevinSalazarDev](https://github.com/kevinSalazarDev).
+Proyecto mantenido por [kevinSalazarDev](https://github.com/kevinSalazarDev). Se desarrolla de manera independiente y evoluciona junto con el proceso de aprendizaje de su creador y las aportaciones de la comunidad.
