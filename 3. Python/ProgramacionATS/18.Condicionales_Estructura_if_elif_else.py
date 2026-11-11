@@ -6,3 +6,4 @@ if numero>0:
     print("El número es positivo")
 
 
+print ("hola")
