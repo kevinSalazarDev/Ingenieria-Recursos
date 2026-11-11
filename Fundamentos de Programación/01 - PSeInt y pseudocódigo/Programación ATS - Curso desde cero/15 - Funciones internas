@@ -1,0 +1,13 @@
+//Funciones Matematicas
+
+Proceso Principal
+	Definir num, resultado Como Reales;
+	
+	Escribir "Ingrese un número: ";
+	leer num;
+	
+	resultado <- azar(num);
+	
+	Escribir "El resultado es; ", resultado;
+	
+FinProceso
