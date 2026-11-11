@@ -1,11 +1,10 @@
-# Condicionales
+# Estructura condicional if-elif-else
 
 numero = int(input("Ingrese un número: "))
 
-if numero>0:
+if numero > 0:
     print("El número es positivo")
-
-
-print ("hola")
-
-print("hola2")
+elif numero < 0:
+    print("El número es negativo")
+else:
+    print("El número es cero")
