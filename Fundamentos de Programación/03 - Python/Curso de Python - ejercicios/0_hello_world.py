@@ -1,6 +1,5 @@
 message = "Hello Python world!"
 print(message)
 
-message = "Hello python crash coourse wordl!"
+message = "Hello Python crash course world!"
 print(message)
-

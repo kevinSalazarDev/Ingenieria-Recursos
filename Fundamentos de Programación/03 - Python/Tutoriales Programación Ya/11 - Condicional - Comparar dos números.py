@@ -1,18 +1,17 @@
-num1=int(input("Ingrese el primer número: "))
-num2=int(input("Ingrese el segundo número: "))
+num1 = int(input("Ingrese el primer número: "))
+num2 = int(input("Ingrese el segundo número: "))
 
-if num1>num2:
-    print("La suma es: ")
-    suma=num1+num2
-    print(suma)
-    print("La resta es: ")
-    resta=num1-num2
-    print(resta)
-    
+if num1 > num2:
+    print("La suma es:")
+    print(num1 + num2)
+    print("La resta es:")
+    print(num1 - num2)
 else:
-    print("La multiplicación es: ")
-    multiplicacion=num1*num2
-    print(multiplicacion)
-    print("La división es: ")
-    division=num1/num2
-    print(division)
+    print("La multiplicación es:")
+    print(num1 * num2)
+
+    if num2 == 0:
+        print("No se puede realizar la división porque el segundo número es 0.")
+    else:
+        print("La división es:")
+        print(num1 / num2)

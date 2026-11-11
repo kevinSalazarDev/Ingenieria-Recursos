@@ -1,3 +1,4 @@
 url = "https://nostarch.com"
-url.removeprefix("https://" )
-print(url)  
+url_sin_prefijo = url.removeprefix("https://")
+
+print(url_sin_prefijo)

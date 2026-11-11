@@ -1,6 +1,8 @@
-numero_positivo = int(input("Ingrese un número: "))
+numero = int(input("Ingrese un número positivo de uno o dos dígitos: "))
 
-if numero_positivo < 10:
+if 1 <= numero <= 9:
     print("El número tiene un dígito")
+elif 10 <= numero <= 99:
+    print("El número tiene dos dígitos")
 else:
-    print("El número tiene dos dígitos")     
+    print("Error: ingrese un número positivo de uno o dos dígitos.")
