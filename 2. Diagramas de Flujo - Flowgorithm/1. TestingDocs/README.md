@@ -1,4 +1,4 @@
-# Programación desde Cero - TestingDocs
+# Flowgorithm - TestingDocs
 
 Material de estudio y ejercicios realizados durante el curso.
 
