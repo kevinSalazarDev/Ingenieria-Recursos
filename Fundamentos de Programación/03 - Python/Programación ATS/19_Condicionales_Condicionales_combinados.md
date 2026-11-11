@@ -24,7 +24,6 @@ else:
 
 ![Diagrama de flujo del ejercicio 19](19_Condicionales_Condicionales_combinados_1.svg)
 
-[Ver o descargar el diagrama en PNG](19_Condicionales_Condicionales_combinados_1.png)
 
 ---
 
