@@ -30,7 +30,7 @@ El orden de los archivos puede variar según el curso de origen. Utiliza esta se
 
 ## 📺 Curso incluido: Programación ATS
 
-En la carpeta **Programación ATS - Curso desde cero** se encuentran ejercicios y material de práctica desarrollados siguiendo las lecciones de Programación ATS.
+En la carpeta [Programación ATS - Curso desde cero](./Programaci%C3%B3n%20ATS%20-%20Curso%20desde%20cero/) se encuentran ejercicios y material de práctica desarrollados siguiendo las lecciones de Programación ATS.
 
 [Ver el curso original en YouTube](https://www.youtube.com/watch?v=D38d8SCtYqE&list=PLWtYZ2ejMVJlACGFXj4zpJ8cWdSjF05tm)
 
