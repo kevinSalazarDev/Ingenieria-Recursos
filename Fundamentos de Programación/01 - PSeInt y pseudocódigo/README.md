@@ -30,7 +30,7 @@ El orden de los archivos puede variar según el curso de origen. Utiliza esta se
 
 ## 📺 Curso incluido: Programación ATS
 
-En la carpeta de este curso se encuentran ejercicios y material de práctica desarrollados siguiendo las lecciones de Programación ATS.
+En la carpeta **Programación ATS - Curso desde cero** se encuentran ejercicios y material de práctica desarrollados siguiendo las lecciones de Programación ATS.
 
 [Ver el curso original en YouTube](https://www.youtube.com/watch?v=D38d8SCtYqE&list=PLWtYZ2ejMVJlACGFXj4zpJ8cWdSjF05tm)
 
@@ -42,7 +42,7 @@ Consulta la documentación y las instrucciones de instalación del sitio oficial
 
 ## 📁 Contenido de esta carpeta
 
-- **Programación desde Cero - Programación ATS:** ejercicios y apuntes realizados durante el curso.
+- **Programación ATS - Curso desde cero:** ejercicios y apuntes realizados durante el curso. Los archivos se identifican con extensión `.psc` para facilitar su reconocimiento como pseudocódigo de PSeInt.
 
 Los ejercicios son material de práctica asociado al curso original. Consulta el enlace del autor para seguir las explicaciones completas.
 
