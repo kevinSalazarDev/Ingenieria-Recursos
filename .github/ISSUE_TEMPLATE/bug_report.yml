@@ -1,0 +1,35 @@
+name: Reportar un error
+description: Informar de un error en un ejercicio, archivo o enlace.
+title: "[Error]: "
+labels:
+  - bug
+body:
+  - type: input
+    id: file
+    attributes:
+      label: Archivo o ruta
+      description: Indica la ruta exacta del archivo afectado.
+      placeholder: Fundamentos de Programación/03 - Python/...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Comportamiento esperado
+      description: ¿Qué debería ocurrir?
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Comportamiento observado
+      description: ¿Qué ocurre realmente? Incluye el mensaje de error si existe.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Pasos o datos para reproducirlo
+      description: Añade entradas de ejemplo y pasos para reproducir el problema.
+    validations:
+      required: false

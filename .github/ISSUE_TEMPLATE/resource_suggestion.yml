@@ -1,0 +1,68 @@
+name: Recomendar un recurso
+description: Proponer un curso, libro, documentación o ejercicio para la biblioteca.
+title: "[Recurso]: "
+labels:
+  - recurso
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Nombre del recurso
+    validations:
+      required: true
+  - type: input
+    id: author
+    attributes:
+      label: Autor o institución
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: Enlace original
+      placeholder: https://
+    validations:
+      required: true
+  - type: dropdown
+    id: language
+    attributes:
+      label: Idioma
+      options:
+        - Español
+        - Inglés
+        - Otro
+    validations:
+      required: true
+  - type: dropdown
+    id: level
+    attributes:
+      label: Nivel aproximado
+      options:
+        - Principiante
+        - Intermedio
+        - Avanzado
+        - Varios niveles
+    validations:
+      required: true
+  - type: textarea
+    id: topics
+    attributes:
+      label: Temas y requisitos previos
+      description: ¿Qué enseña y qué conocimientos hacen falta?
+    validations:
+      required: true
+  - type: textarea
+    id: reason
+    attributes:
+      label: ¿Por qué lo recomiendas?
+    validations:
+      required: true
+  - type: checkboxes
+    id: access
+    attributes:
+      label: Acceso y derechos
+      options:
+        - label: He comprobado que el enlace corresponde a la fuente original.
+          required: true
+        - label: He revisado si el recurso informa de sus condiciones de uso o licencia.
+          required: false
