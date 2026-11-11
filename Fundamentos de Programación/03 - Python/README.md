@@ -32,8 +32,6 @@ No necesitas estudiar todos los cursos de esta carpeta al mismo tiempo. Escoge u
 
 ## 📚 Material organizado en esta carpeta
 
-Los directorios actuales reúnen material de distintas fuentes:
-
 | Carpeta | Uso dentro de la biblioteca |
 |---|---|
 | `Programación ATS` | Ejercicios y ejemplos asociados a Programación ATS. |
@@ -41,7 +39,7 @@ Los directorios actuales reúnen material de distintas fuentes:
 | `Curso de Python - ejercicios` | Ejercicios y apuntes de un curso de Python. |
 | `Tutoriales Programación Ya` | Material de práctica asociado a Tutoriales Programación Ya. |
 
-Los nombres de las carpetas identifican las fuentes o colecciones existentes; consulta cada recurso original para conocer su temario completo, idioma y requisitos.
+Los nombres identifican las fuentes o colecciones existentes. Consulta cada recurso original para conocer su temario completo, idioma y requisitos.
 
 ## 🧪 Método de práctica
 
@@ -52,13 +50,25 @@ Los nombres de las carpetas identifican las fuentes o colecciones existentes; co
 - Cuando termines un tema, crea un programa pequeño que lo utilice.
 - Anota los errores que encuentres y cómo los solucionaste.
 
+## ✅ Comprobación automática
+
+El repositorio incluye un verificador que revisa la sintaxis de los archivos Python de esta sección. También se ejecuta automáticamente mediante GitHub Actions cuando se modifican ejercicios Python.
+
+Esta comprobación detecta errores de sintaxis, pero **no ejecuta los programas ni garantiza que la lógica o los resultados sean correctos**. Prueba cada ejercicio en tu entorno y compara el resultado con el enunciado.
+
+Para ejecutar la comprobación desde la raíz del repositorio:
+
+```bash
+python scripts/check_python_syntax.py
+```
+
 ## 🔗 Documentación oficial
 
 - [Sitio oficial de Python](https://www.python.org/)
 - [Descargas de Python](https://www.python.org/downloads/)
-- [Tutorial oficial](https://docs.python.org/es/3/tutorial/)
+- [Tutorial oficial en español](https://docs.python.org/es/3/tutorial/)
 
-La documentación oficial puede complementar los cursos en video y servir como referencia cuando necesites consultar la sintaxis.
+La documentación oficial complementa los cursos en video y sirve como referencia para consultar la sintaxis.
 
 ## 📌 Nota sobre los materiales
 
