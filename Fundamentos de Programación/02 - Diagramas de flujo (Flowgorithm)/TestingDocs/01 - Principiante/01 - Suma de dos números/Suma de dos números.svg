@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created by Flowgorithm 4.5.0 (http://flowgorithm.org) -->
+
+<svg xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" version="1.1" width="700" height="1550">
+	<rect x="0" y="0" width="700" height="1550" fill="#000000"/>
+	<g>
+		<polyline fill="none" stroke="#A0A0A0" stroke-width="6" stroke-dasharray="none" points="350,125 350,186"/>
+		<polygon fill="#A0A0A0" stroke="none" points="350,200 363,175 336,175"/>
+		<polyline fill="none" stroke="#A0A0A0" stroke-width="6" stroke-dasharray="none" points="350,1350 350,1411"/>
+		<polygon fill="#A0A0A0" stroke="none" points="350,1425 363,1400 336,1400"/>
+		<g>
+			<path fill="#804080" stroke="#E0A0E0" stroke-width="3" stroke-dasharray="none" d="M 250,25 A 50 50, 0, 0 0, 250 125 L 450,125 A 50 50, 0, 0 0, 450 25 Z"/>
+			<text x="350" y="40" fill="#FFB0F0" font-family="Arial" font-size="32pt" text-anchor="middle" direction="ltr">
+				<tspan x="350" dy="50" unicode-bidi="embed">Main</tspan>
+			</text>
+		</g>
+		<g>
+			<path fill="#804080" stroke="#E0A0E0" stroke-width="3" stroke-dasharray="none" d="M 250,1425 A 50 50, 0, 0 0, 250 1525 L 450,1525 A 50 50, 0, 0 0, 450 1425 Z"/>
+			<text x="350" y="1440" fill="#FFB0F0" font-family="Arial" font-size="32pt" text-anchor="middle" direction="ltr">
+				<tspan x="350" dy="50" unicode-bidi="embed">End</tspan>
+			</text>
+		</g>
+		<g>
+			<polyline fill="none" stroke="#A0A0A0" stroke-width="6" stroke-dasharray="none" points="350,375 350,436"/>
+			<polygon fill="#A0A0A0" stroke="none" points="350,450 363,425 336,425"/>
+			<polyline fill="none" stroke="#A0A0A0" stroke-width="6" stroke-dasharray="none" points="350,600 350,661"/>
+			<polygon fill="#A0A0A0" stroke="none" points="350,675 363,650 336,650"/>
+			<polyline fill="none" stroke="#A0A0A0" stroke-width="6" stroke-dasharray="none" points="350,775 350,836"/>
+			<polygon fill="#A0A0A0" stroke="none" points="350,850 363,825 336,825"/>
+			<polyline fill="none" stroke="#A0A0A0" stroke-width="6" stroke-dasharray="none" points="350,950 350,1011"/>
+			<polygon fill="#A0A0A0" stroke="none" points="350,1025 363,1000 336,1000"/>
+			<polyline fill="none" stroke="#A0A0A0" stroke-width="6" stroke-dasharray="none" points="350,1125 350,1186"/>
+			<polygon fill="#A0A0A0" stroke="none" points="350,1200 363,1175 336,1175"/>
+			<g>
+				<path fill="#808020" stroke="#FFFF40" stroke-width="3" stroke-dasharray="none" d="M 125,200 L 125,375 L 575,375 L 575,200 Z"/>
+				<polyline fill="none" stroke="#FFFF40" stroke-width="3" stroke-dasharray="none" points="125,225 575,225"/>
+				<polyline fill="none" stroke="#FFFF40" stroke-width="3" stroke-dasharray="none" points="150,200 150,375"/>
+				<text x="362" y="240" fill="#FFFFA0" font-family="Arial" font-size="32pt" text-anchor="middle" direction="ltr">
+					<tspan x="362" dy="50" unicode-bidi="embed">Integer num1, num2,</tspan>
+					<tspan x="362" dy="50" unicode-bidi="embed"> resultado</tspan>
+				</text>
+			</g>
+			<g>
+				<path fill="#208020" stroke="#40FF40" stroke-width="3" stroke-dasharray="none" d="M 150,450 L 75,600 L 550,600 L 625,450 Z"/>
+				<text x="350" y="465" fill="#A0FFA0" font-family="Arial" font-size="32pt" text-anchor="middle" direction="ltr">
+					<tspan x="350" dy="50" unicode-bidi="embed">Output &quot;Ingrese dos</tspan>
+					<tspan x="350" dy="50" unicode-bidi="embed"> n&#250;meros: &quot;</tspan>
+				</text>
+			</g>
+			<g>
+				<path fill="#204080" stroke="#40A0FF" stroke-width="3" stroke-dasharray="none" d="M 225,675 L 175,775 L 475,775 L 525,675 Z"/>
+				<text x="350" y="690" fill="#90C0FF" font-family="Arial" font-size="32pt" text-anchor="middle" direction="ltr">
+					<tspan x="350" dy="50" unicode-bidi="embed">Input num1</tspan>
+				</text>
+			</g>
+			<g>
+				<path fill="#204080" stroke="#40A0FF" stroke-width="3" stroke-dasharray="none" d="M 225,850 L 175,950 L 475,950 L 525,850 Z"/>
+				<text x="350" y="865" fill="#90C0FF" font-family="Arial" font-size="32pt" text-anchor="middle" direction="ltr">
+					<tspan x="350" dy="50" unicode-bidi="embed">Input num2</tspan>
+				</text>
+			</g>
+			<g>
+				<path fill="#808020" stroke="#FFFF40" stroke-width="3" stroke-dasharray="none" d="M 100,1025 L 100,1125 L 600,1125 L 600,1025 Z"/>
+				<text x="350" y="1040" fill="#FFFFA0" font-family="Arial" font-size="32pt" text-anchor="middle" direction="ltr">
+					<tspan x="350" dy="50" unicode-bidi="embed">resultado = num1 + num2</tspan>
+				</text>
+			</g>
+			<g>
+				<path fill="#208020" stroke="#40FF40" stroke-width="3" stroke-dasharray="none" d="M 100,1200 L 25,1350 L 600,1350 L 675,1200 Z"/>
+				<text x="350" y="1215" fill="#A0FFA0" font-family="Arial" font-size="32pt" text-anchor="middle" direction="ltr">
+					<tspan x="350" dy="50" unicode-bidi="embed">Output &quot;El resultado de la</tspan>
+					<tspan x="350" dy="50" unicode-bidi="embed"> suma es: &quot; &amp; resultado</tspan>
+				</text>
+			</g>
+		</g>
+	</g>
+</svg>
