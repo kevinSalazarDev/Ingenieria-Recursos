@@ -1,35 +1,53 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 760" role="img" aria-label="Diagrama de flujo del ejercicio 13: operación aritmética">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 980" role="img" aria-label="Diagrama de flujo del ejercicio 13: operación aritmética con validación del denominador">
 <defs>
 <style>
 svg{background:#000;font-family:Arial,Helvetica,sans-serif}
-.line{fill:none;stroke:#ddd;stroke-width:1.6;marker-end:url(#arrow)}
+.line{fill:none;stroke:#ddd;stroke-width:1.7;marker-end:url(#arrow)}
+.branch{fill:none;stroke:#ddd;stroke-width:1.7}
 .terminal{fill:#703078;stroke:#d58bdb;stroke-width:1.5}
 .input{fill:#0754a6;stroke:#00a6ff;stroke-width:1.5}
 .assign{fill:#a87800;stroke:#ffdc55;stroke-width:1.5}
 .output{fill:#008b19;stroke:#00ff31;stroke-width:1.5}
-.label{fill:#fff;font-size:15px;text-anchor:middle;dominant-baseline:middle}
+.decision{fill:#a52d69;stroke:#ff8bc2;stroke-width:1.5}
+.connector{fill:#a52d69;stroke:#ff8bc2;stroke-width:1.5}
+.label{fill:#fff;font-size:16px;text-anchor:middle;dominant-baseline:middle}
+.small{fill:#fff;font-size:14px;text-anchor:middle;dominant-baseline:middle}
+.edge{fill:#fff;font-size:15px;text-anchor:middle}
 </style>
 <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0 L6 3 L0 6" fill="none" stroke="#ddd" stroke-width="1"/></marker>
 </defs>
-<rect width="1000" height="760" fill="#000"/>
-<rect class="terminal" x="450" y="22" width="100" height="34" rx="17"/>
-<text class="label" x="500" y="39">Main</text>
-<path class="line" d="M500 56 V105"/>
-<polygon class="input" points="345,105 655,105 640,160 330,160"/>
-<text class="label" x="492" y="132">a = float(input(...))</text>
-<path class="line" d="M492 160 V205"/>
-<polygon class="input" points="345,205 655,205 640,260 330,260"/>
-<text class="label" x="492" y="232">b = float(input(...))</text>
-<path class="line" d="M492 260 V305"/>
-<polygon class="input" points="345,305 655,305 640,360 330,360"/>
-<text class="label" x="492" y="332">c = float(input(...))</text>
-<path class="line" d="M492 360 V410"/>
-<rect class="assign" x="280" y="410" width="430" height="66" rx="3"/>
-<text class="label" x="495" y="443">resultado = (a³ × (b² − 2ac)) / (2b)</text>
-<path class="line" d="M495 476 V530"/>
-<polygon class="output" points="345,530 655,530 640,585 330,585"/>
-<text class="label" x="492" y="557">Mostrar resultado</text>
-<path class="line" d="M492 585 V700"/>
-<rect class="terminal" x="450" y="700" width="100" height="34" rx="17"/>
-<text class="label" x="500" y="717">End</text>
+<rect width="1200" height="980" fill="#000"/>
+<rect class="terminal" x="550" y="20" width="100" height="36" rx="18"/>
+<text class="label" x="600" y="38">Main</text>
+<path class="line" d="M600 56 V100"/>
+<polygon class="input" points="425,100 775,100 760,158 410,158"/>
+<text class="label" x="592" y="129">a = float(input(...))</text>
+<path class="line" d="M592 158 V195"/>
+<polygon class="input" points="425,195 775,195 760,253 410,253"/>
+<text class="label" x="592" y="224">b = float(input(...))</text>
+<path class="line" d="M592 253 V290"/>
+<polygon class="input" points="425,290 775,290 760,348 410,348"/>
+<text class="label" x="592" y="319">c = float(input(...))</text>
+<path class="line" d="M592 348 V375"/>
+<polygon class="decision" points="600,375 740,430 600,485 460,430"/>
+<text class="label" x="600" y="430">¿b == 0?</text>
+<path class="branch" d="M740 430 H960 V500"/>
+<text class="edge" x="850" y="414">Verdadero</text>
+<polygon class="output" points="835,500 1125,500 1110,580 820,580"/>
+<text class="small" x="972" y="540">Mostrar mensaje de error</text>
+<text class="small" x="972" y="559">b no puede ser 0</text>
+<path class="branch" d="M960 580 V810 H600"/>
+<path class="branch" d="M460 430 H240 V500"/>
+<text class="edge" x="350" y="414">Falso</text>
+<rect class="assign" x="55" y="500" width="370" height="80" rx="3"/>
+<text class="small" x="240" y="529">resultado =</text>
+<text class="small" x="240" y="552">(a³ × (b² − 2ac)) / (2b)</text>
+<path class="line" d="M240 580 V640"/>
+<polygon class="output" points="90,640 390,640 375,710 75,710"/>
+<text class="label" x="232" y="675">Mostrar resultado</text>
+<path class="branch" d="M232 710 V810 H600"/>
+<circle class="connector" cx="600" cy="810" r="9"/>
+<path class="line" d="M600 819 V900"/>
+<rect class="terminal" x="550" y="900" width="100" height="36" rx="18"/>
+<text class="label" x="600" y="918">End</text>
 </svg>
