@@ -31,3 +31,7 @@ FinProceso
 ## Explicación
 
 El algoritmo declara las variables que necesita, procesa los datos mediante las instrucciones mostradas y presenta el resultado con `Escribir`. Observa especialmente cómo se asignan valores con `<-` y cómo se utilizan las instrucciones de entrada y salida según el ejercicio.
+
+## Diagrama de flujo
+
+![Diagrama de flujo del ejercicio 10 - Operaciones de asignación](10%20-%20Operaciones%20de%20asignaci%C3%B3n.svg)

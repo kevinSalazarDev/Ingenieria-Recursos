@@ -32,3 +32,7 @@ FinProceso
 ## Explicación
 
 El programa sigue una secuencia de pasos: define los datos necesarios, obtiene los valores de entrada cuando corresponde, realiza el cálculo o evaluación y comunica el resultado. Revisa el orden de las instrucciones y el papel de cada variable para comprender cómo fluye la información.
+
+## Diagrama de flujo
+
+![Diagrama de flujo del ejercicio 18 - Operaciones aritméticas - Ejercicio 3](18%20-%20Operaciones%20aritm%C3%A9ticas%20-%20Ejercicio%203.svg)
