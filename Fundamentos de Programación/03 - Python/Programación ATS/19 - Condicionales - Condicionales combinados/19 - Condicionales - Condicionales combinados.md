@@ -1,4 +1,4 @@
-# Ejercicio 19 - Condicionales combinados
+# 19 - Condicionales - Condicionales combinados
 
 ## Código Python
 
@@ -15,9 +15,9 @@ if 0 < edad < 100:
         print("Es menor de edad")   
 
 else:
-    print("Edad incorrecta")   
+    print("Edad incorrecta")
 ```
 
 ## Diagrama de flujo
 
-![Diagrama de flujo del ejercicio 19](19%20-%20Condicionales%20-%20Condicionales%20combinados.svg)
+<img src="./19%20-%20Condicionales%20-%20Condicionales%20combinados.svg" alt="Diagrama de flujo del ejercicio" width="100%">
