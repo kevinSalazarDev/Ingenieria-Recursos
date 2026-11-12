@@ -1,1 +1,24 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 690"><defs><style>svg{background:#0a0c10}.title{font:bold 22px Arial;fill:#f3f4f6}.label{font:16px Arial;fill:#e5e7eb}.process{fill:#1f2937;stroke:#81b1db;stroke-width:2}.terminal{fill:#173b32;stroke:#65c99a;stroke-width:2}.decision{fill:#3b321c;stroke:#e5b95c;stroke-width:2}.arrow{stroke:#cbd5e1;stroke-width:2;fill:none}.edge{font:14px Arial;fill:#e5e7eb}</style></defs><text x="450" y="42" text-anchor="middle" class="title">18 - Condicionales - Estructura if-elif-else</text><rect x="375" y="70" width="150" height="52" rx="26" class="terminal"/><text x="450" y="102" text-anchor="middle" class="label">Inicio</text><path d="M450 122 V160" class="arrow"/><rect x="250" y="160" width="400" height="58" rx="10" class="process"/><text x="450" y="195" text-anchor="middle" class="label">Leer numero</text><path d="M450 218 V260" class="arrow"/><polygon points="450,260 580,330 450,400 320,330" class="decision"/><text x="450" y="336" text-anchor="middle" class="label">numero &gt; 0</text><path d="M320 330 H150 V445" class="arrow"/><text x="220" y="316" class="edge">Sí</text><rect x="40" y="445" width="220" height="58" rx="10" class="process"/><text x="150" y="480" text-anchor="middle" class="label">Mostrar positivo</text><path d="M580 330 H750 V405" class="arrow"/><text x="665" y="316" class="edge">No</text><polygon points="750,405 850,460 750,515 650,460" class="decision"/><text x="750" y="466" text-anchor="middle" class="label">numero == 0</text><path d="M650 460 H450 V550" class="arrow"/><text x="540" y="445" class="edge">Sí</text><rect x="340" y="550" width="220" height="58" rx="10" class="process"/><text x="450" y="585" text-anchor="middle" class="label">Mostrar cero</text><path d="M850 460 H870 V550" class="arrow"/><text x="862" y="445" class="edge">No</text><rect x="660" y="550" width="220" height="58" rx="10" class="process"/><text x="770" y="585" text-anchor="middle" class="label">Mostrar negativo</text><path d="M150 503 V640 H450 M450 608 V640 M770 608 V640 H450" class="arrow"/><rect x="375" y="640" width="150" height="45" rx="22" class="terminal"/><text x="450" y="668" text-anchor="middle" class="label">Fin</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 760" role="img" aria-label="18 - Condicionales - Estructura if-elif-else"><defs><style>
+svg{background:#fff;font-family:Arial,Helvetica,sans-serif}
+.title{font-size:21px;font-weight:700;fill:#222}
+.symbol{fill:#eaf4ff;stroke:#263746;stroke-width:2}
+.terminal{fill:#d9ecff;stroke:#263746;stroke-width:2}
+.decision{fill:#fff2cc;stroke:#263746;stroke-width:2}
+.label{font-size:16px;fill:#17212b;text-anchor:middle;dominant-baseline:middle}
+.small{font-size:14px;fill:#17212b;text-anchor:middle}
+.edge{font-size:14px;font-weight:700;fill:#222}
+.path{fill:none;stroke:#263746;stroke-width:2;marker-end:url(#arrow)}
+</style><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#263746"/></marker></defs><text class="title" x="550" y="40" text-anchor="middle">18 - Condicionales - Estructura if-elif-else</text>
+<rect class="terminal" x="475" y="65" width="150" height="52" rx="26"/><text class="label" x="550" y="91">Inicio</text>
+<path class="path" d="M550 117 V150"/><polygon class="symbol" points="430,150 670,150 650,208 450,208"/><text class="label" x="550" y="179">Leer numero</text>
+<path class="path" d="M550 208 V245"/><polygon class="decision" points="550,245 690,320 550,395 410,320"/><text class="label" x="550" y="320">numero &gt; 0</text>
+<path class="path" d="M410 320 H190 V440"/><text class="edge" x="290" y="305">Verdadero</text>
+<rect class="symbol" x="75" y="440" width="230" height="65"/><text class="label" x="190" y="472">Mostrar positivo</text>
+<path class="path" d="M690 320 H900 V390"/><text class="edge" x="780" y="305">Falso</text>
+<polygon class="decision" points="900,390 1010,450 900,510 790,450"/><text class="label" x="900" y="450">numero == 0</text>
+<path class="path" d="M790 450 H550 V560"/><text class="edge" x="650" y="435">Verdadero</text>
+<polygon class="symbol" points="445,560 655,560 635,625 465,625"/><text class="label" x="550" y="592">Mostrar cero</text>
+<path class="path" d="M1010 450 H1040 V560 H900"/><text class="edge" x="1000" y="430">Falso</text>
+<polygon class="symbol" points="795,560 1005,560 985,625 815,625"/><text class="label" x="900" y="592">Mostrar negativo</text>
+<path class="path" d="M190 505 V690 H550 V715 M550 625 V715 M900 625 V690 H550"/>
+<rect class="terminal" x="475" y="715" width="150" height="40" rx="20"/><text class="label" x="550" y="735">Fin</text></svg>
