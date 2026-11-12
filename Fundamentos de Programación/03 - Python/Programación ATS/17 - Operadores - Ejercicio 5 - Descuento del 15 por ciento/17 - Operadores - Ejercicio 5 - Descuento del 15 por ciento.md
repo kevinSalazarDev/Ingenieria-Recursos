@@ -1,4 +1,4 @@
-# Ejercicio 17 - peradores - Ejercicio 5 - Descuento del 15 por ciento
+# 17 - Operadores - Ejercicio 5 - Descuento del 15 por ciento
 
 ## Código Python
 
@@ -12,9 +12,8 @@ descuento = total_compra*15/100
 total_pagar = total_compra - descuento
 
 print(f"El total a pagar es: ${total_pagar:.2f}")
-
 ```
 
 ## Diagrama de flujo
 
-![Diagrama de flujo del ejercicio 17](17%20-%20Operadores%20-%20Ejercicio%205%20-%20Descuento%20del%2015%20por%20ciento.svg)
+<img src="./17%20-%20Operadores%20-%20Ejercicio%205%20-%20Descuento%20del%2015%20por%20ciento.svg" alt="Diagrama de flujo del ejercicio" width="100%">
