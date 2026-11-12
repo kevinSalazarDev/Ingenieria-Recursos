@@ -8,4 +8,6 @@ Solicita la distancia recorrida y la cantidad de galones consumidos. Calcula el 
 
 ## Diagrama de flujo
 
-El archivo original [`mpg.fprg`](./mpg.fprg) se conserva para abrirlo y ejecutarlo con Flowgorithm. **La imagen SVG de este ejercicio está pendiente de incorporar**; no se ha generado una imagen sustituta.
+El archivo original [`mpg.fprg`](./mpg.fprg) se conserva para abrirlo y ejecutarlo con Flowgorithm.
+
+![Diagrama de flujo del rendimiento de combustible (MPG)](./mpg%20-%20Main.svg)
