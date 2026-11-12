@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="ejercicio_4"/>
+        <attribute name="authors" value="K"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-07-23 06:49:43 p.&#160;m."/>
+        <attribute name="created" value="SztERVNLVE9QLTRPUjYzUUI7MjAyNi0wNy0yMzswNjo0ODozMSBwLsKgbS47MjcyNw=="/>
+        <attribute name="edited" value="SztERVNLVE9QLTRPUjYzUUI7MjAyNi0wNy0yMzswNjo0OTo0MyBwLsKgbS47MTsyODM5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Salida 1&quot;" newline="True"/>
+            <output expression="&quot;Salida 2&quot;" newline="True"/>
+            <output expression="&quot;Salida 3&quot;" newline="True"/>
+            <output expression="&quot;Salida 4&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
