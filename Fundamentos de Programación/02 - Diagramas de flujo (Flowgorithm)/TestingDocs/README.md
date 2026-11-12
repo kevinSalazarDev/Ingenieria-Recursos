@@ -2,9 +2,15 @@
 
 Esta carpeta reúne ejercicios de práctica de lógica de programación realizados con **Flowgorithm**. Cada ejercicio está organizado en su propia carpeta, con su archivo original `.fprg` y una guía en Markdown.
 
-## Curso original
+## Sobre el curso original
 
-[Ver lista de reproducción en YouTube - TestingDocs](https://www.youtube.com/playlist?list=PLVHbdCc-UCC1SNtA3HFL36jMbNFPZtzn8)
+Este material está basado en un curso de **TestingDocs** que conocí por recomendación de la página oficial de **Flowgorithm**. Me pareció especialmente útil porque no se limitaba a explicar la lógica de programación: también enseñaba a reconocer y utilizar los botones, las herramientas y las distintas opciones de la interfaz de Flowgorithm paso a paso.
+
+Actualmente, el curso ya no está disponible en el sitio web de TestingDocs; sus creadores retiraron ese contenido. Sin embargo, la lista de reproducción de YouTube todavía se encuentra disponible:
+
+[Ver lista de reproducción del curso de TestingDocs en YouTube](https://www.youtube.com/playlist?list=PLVHbdCc-UCC1SNtA3HFL36jMbNFPZtzn8)
+
+**Nota:** esta carpeta conserva los ejercicios prácticos que realicé siguiendo ese curso. No pretende reemplazar el material original ni atribuirse su autoría; busca mantener organizados los ejercicios y facilitar que otras personas puedan practicarlos aunque el contenido del sitio web original ya no esté disponible.
 
 ## 01 - Principiante
 
@@ -48,4 +54,5 @@ Esta carpeta reúne ejercicios de práctica de lógica de programación realizad
 - Los títulos descriptivos se basan en las instrucciones reales de cada archivo.
 - Los archivos `10_par.fprg` y `10_impar.fprg` tienen el mismo contenido; ambos se mantienen por separado.
 - El archivo `mpg.png` se conserva junto al ejercicio de rendimiento de combustible, sin enlazarlo en el Markdown.
-- Los diagramas se visualizan directamente desde los archivos `.fprg`. Las imágenes SVG se podrán añadir cuando se exporten desde Flowgorithm.
+- Cada ejercicio de Principiante incluye su archivo fuente `.fprg`, su explicación en Markdown y el diagrama SVG exportado desde Flowgorithm.
+- En Intermedio, los archivos SVG se incorporarán a medida que estén disponibles.
