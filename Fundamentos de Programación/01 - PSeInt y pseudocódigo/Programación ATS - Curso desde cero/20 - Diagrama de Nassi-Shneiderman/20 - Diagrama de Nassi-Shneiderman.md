@@ -21,3 +21,7 @@ FinProceso
 ## Explicación
 
 El programa sigue una secuencia de pasos: define los datos necesarios, obtiene los valores de entrada cuando corresponde, realiza el cálculo o evaluación y comunica el resultado. Revisa el orden de las instrucciones y el papel de cada variable para comprender cómo fluye la información.
+
+## Diagrama de flujo
+
+![Diagrama de flujo del ejercicio 20 - Diagrama de Nassi-Shneiderman](20%20-%20Diagrama%20de%20Nassi-Shneiderman.svg)

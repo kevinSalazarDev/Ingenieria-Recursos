@@ -28,3 +28,7 @@ FinProceso
 ## Explicación
 
 El programa sigue una secuencia de pasos: define los datos necesarios, obtiene los valores de entrada cuando corresponde, realiza el cálculo o evaluación y comunica el resultado. Revisa el orden de las instrucciones y el papel de cada variable para comprender cómo fluye la información.
+
+## Diagrama de flujo
+
+![Diagrama de flujo del ejercicio 21 - Pseudocódigo](21%20-%20Pseudoc%C3%B3digo.svg)

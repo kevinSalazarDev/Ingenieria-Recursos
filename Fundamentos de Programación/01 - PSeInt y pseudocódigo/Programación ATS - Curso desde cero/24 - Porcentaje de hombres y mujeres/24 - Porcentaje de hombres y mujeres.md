@@ -28,3 +28,7 @@ FinProceso
 ## Explicación
 
 Identifica las variables de entrada y las variables utilizadas para almacenar los resultados intermedios. Después sigue las operaciones en el mismo orden en que aparecen en el código y comprueba el resultado con valores de prueba.
+
+## Diagrama de flujo
+
+![Diagrama de flujo del ejercicio 24 - Porcentaje de hombres y mujeres](24%20-%20Porcentaje%20de%20hombres%20y%20mujeres.svg)

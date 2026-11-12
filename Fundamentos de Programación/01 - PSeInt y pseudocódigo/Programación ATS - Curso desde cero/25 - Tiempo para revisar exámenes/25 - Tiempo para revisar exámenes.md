@@ -43,3 +43,7 @@ FinProceso
 ## Explicación
 
 Identifica las variables de entrada y las variables utilizadas para almacenar los resultados intermedios. Después sigue las operaciones en el mismo orden en que aparecen en el código y comprueba el resultado con valores de prueba.
+
+## Diagrama de flujo
+
+![Diagrama de flujo del ejercicio 25 - Tiempo para revisar exámenes](25%20-%20Tiempo%20para%20revisar%20ex%C3%A1menes.svg)

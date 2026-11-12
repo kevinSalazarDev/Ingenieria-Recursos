@@ -48,3 +48,7 @@ FinProceso
 ## Explicación
 
 El programa recibe los datos necesarios y evalúa las condiciones en el orden escrito. Cuando una condición se cumple, ejecuta el bloque correspondiente; de lo contrario, continúa por la alternativa indicada con `SiNo`. Prueba valores de entrada distintos para comprobar cada camino posible.
+
+## Diagrama de flujo
+
+![Diagrama de flujo del ejercicio 27 - Notas de un alumno](27%20-%20Notas%20de%20un%20alumno.svg)

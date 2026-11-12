@@ -29,3 +29,7 @@ FinProceso
 ## Explicación
 
 Identifica las variables de entrada y las variables utilizadas para almacenar los resultados intermedios. Después sigue las operaciones en el mismo orden en que aparecen en el código y comprueba el resultado con valores de prueba.
+
+## Diagrama de flujo
+
+![Diagrama de flujo del ejercicio 26 - Descuento del 15% en una tienda](26%20-%20Descuento%20del%2015%25%20en%20una%20tienda.svg)
