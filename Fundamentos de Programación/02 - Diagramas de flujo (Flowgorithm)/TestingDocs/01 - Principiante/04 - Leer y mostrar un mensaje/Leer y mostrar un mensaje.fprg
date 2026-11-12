@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="ejercicio_2"/>
+        <attribute name="authors" value="K"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-07-23 06:40:47 p.&#160;m."/>
+        <attribute name="created" value="SztERVNLVE9QLTRPUjYzUUI7MjAyNi0wNy0yMzswNjozNzo0MSBwLsKgbS47MjcyNg=="/>
+        <attribute name="edited" value="SztERVNLVE9QLTRPUjYzUUI7MjAyNi0wNy0yMzswNjo0MDo0NyBwLsKgbS47MTsyODM0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="mensajeDelUsuario" type="String" array="False" size=""/>
+            <output expression="&quot;Ingrese un mensaje:&quot;" newline="True"/>
+            <input variable="mensajeDelUsuario"/>
+            <output expression="&quot;Su mensaje es: &quot; &amp; mensajeDelUsuario" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
