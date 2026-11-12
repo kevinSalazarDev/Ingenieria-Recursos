@@ -35,3 +35,7 @@ FinProceso
 ## Explicación
 
 El programa recibe los datos necesarios y evalúa las condiciones en el orden escrito. Cuando una condición se cumple, ejecuta el bloque correspondiente; de lo contrario, continúa por la alternativa indicada con `SiNo`. Prueba valores de entrada distintos para comprobar cada camino posible.
+
+## Diagrama de flujo
+
+![Diagrama de flujo del ejercicio 31 - Condicionales - Descuento en una compra superior a 100](31%20-%20Condicionales%20-%20Descuento%20en%20una%20compra%20superior%20a%20100.svg)

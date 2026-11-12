@@ -46,3 +46,7 @@ FinProceso
 ## Explicación
 
 El algoritmo utiliza una estructura de selección o repetición, según corresponda. Sigue la variable de control y revisa cuándo se cumple la condición para entender qué instrucciones se ejecutan y cuántas veces. Comprueba el comportamiento con distintos valores de entrada, incluidos los límites indicados en el ejercicio.
+
+## Diagrama de flujo
+
+![Diagrama de flujo del ejercicio 34 - Condicionales - Descuento según kilos de manzanas](34%20-%20Condicionales%20-%20Descuento%20seg%C3%BAn%20kilos%20de%20manzanas.svg)

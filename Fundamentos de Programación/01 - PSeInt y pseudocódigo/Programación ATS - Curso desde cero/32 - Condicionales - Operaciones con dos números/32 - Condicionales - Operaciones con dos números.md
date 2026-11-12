@@ -33,3 +33,7 @@ FinProceso
 ## Explicación
 
 El programa recibe los datos necesarios y evalúa las condiciones en el orden escrito. Cuando una condición se cumple, ejecuta el bloque correspondiente; de lo contrario, continúa por la alternativa indicada con `SiNo`. Prueba valores de entrada distintos para comprobar cada camino posible.
+
+## Diagrama de flujo
+
+![Diagrama de flujo del ejercicio 32 - Condicionales - Operaciones con dos números](32%20-%20Condicionales%20-%20Operaciones%20con%20dos%20n%C3%BAmeros.svg)
