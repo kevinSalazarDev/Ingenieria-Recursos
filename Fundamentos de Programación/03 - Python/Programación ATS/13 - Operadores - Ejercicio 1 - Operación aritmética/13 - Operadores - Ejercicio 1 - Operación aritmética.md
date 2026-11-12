@@ -17,6 +17,4 @@ prin
 
 ## Diagrama de flujo
 
-<img src="./13%20-%20Operadores%20-%20Ejercicio%201%20-%20Operaci%C3%B3n%20aritm%C3%A9tica.svg" alt="Diagrama de flujo del ejercicio" width="100%">
-
-> **Nota:** El archivo original contiene dos referencias a print sin paréntesis y una línea «prin» incompleta. Se conserva exactamente; el diagrama representa las instrucciones identificables y no implica que el programa pueda ejecutarse.
+<img src="./13%20-%20Operadores%20-%20Ejercicio%201%20-%20Operaci%C3%B3n%20aritm%C3%A9tica.svg" alt="Diagrama de flujo del ejercicio 13" width="100%">
