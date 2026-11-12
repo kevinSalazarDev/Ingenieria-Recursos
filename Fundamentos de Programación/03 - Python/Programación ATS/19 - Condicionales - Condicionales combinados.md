@@ -22,4 +22,4 @@ else:
 
 ## Diagrama de flujo
 
-![Diagrama de flujo del ejercicio 19](19 - Condicionales - Condicionales combinados.svg)
+![Diagrama de flujo del ejercicio 19](19%20-%20Condicionales%20-%20Condicionales%20combinados.svg)
