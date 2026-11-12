@@ -24,7 +24,7 @@
 
 <!-- Input -->
 <polygon class="input" points="455,165 745,165 725,235 435,235"/>
-<text class="label" x="590" y="200">numero = Leer número</text>
+<text class="label" x="590" y="200">numero</text>
 <path class="flow" d="M590 235 V285"/>
 
 <!-- If numero > 0 -->
@@ -35,7 +35,7 @@
 <path class="flow" d="M445 365 H225 V500"/>
 <text class="branch" x="320" y="347">Verdadero</text>
 <polygon class="output" points="105,500 355,500 335,575 85,575"/>
-<text class="label" x="220" y="538">Mostrar positivo</text>
+<text class="label" x="220" y="538">"El número es positivo"</text>
 
 <!-- False: second condition -->
 <path class="flow" d="M735 365 H900 V500"/>
@@ -47,13 +47,13 @@
 <path class="flow" d="M755 580 H650 V735"/>
 <text class="branch" x="675" y="562">Verdadero</text>
 <polygon class="output" points="535,735 785,735 765,810 515,810"/>
-<text class="label" x="650" y="773">Mostrar cero</text>
+<text class="label" x="650" y="773">"El número es cero"</text>
 
 <!-- False: negative -->
 <path class="flow" d="M1045 580 H1080 V735"/>
 <text class="branch" x="1050" y="560">Falso</text>
 <polygon class="output" points="955,735 1185,735 1165,810 935,810"/>
-<text class="label" x="1060" y="773">Mostrar negativo</text>
+<text class="label" x="1060" y="773">"El número es negativo"</text>
 
 <!-- Join branches and End -->
 <path class="flow" d="M220 575 V925 H600 V1000"/>
