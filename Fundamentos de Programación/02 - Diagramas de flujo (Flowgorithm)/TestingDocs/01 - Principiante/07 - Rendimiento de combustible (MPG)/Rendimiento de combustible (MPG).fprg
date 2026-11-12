@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="mpg"/>
+        <attribute name="authors" value="K"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-07-23 06:15:59 p.&#160;m."/>
+        <attribute name="created" value="SztERVNLVE9QLTRPUjYzUUI7MjAyNi0wNy0yMzswNjowOToxOCBwLsKgbS47MjcyOQ=="/>
+        <attribute name="edited" value="SztERVNLVE9QLTRPUjYzUUI7MjAyNi0wNy0yMzswNjoxNTo1OSBwLsKgbS47MTsyODM5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="distancia, galones, mpg" type="Real" array="False" size=""/>
+            <output expression="&quot;Ingrese la distancia a recorrer: &quot;" newline="True"/>
+            <input variable="distancia"/>
+            <output expression="&quot;Ingrese los galones: &quot;" newline="True"/>
+            <input variable="galones"/>
+            <assign variable="mpg" expression="distancia / galones"/>
+            <output expression="&quot;mpg sera: &quot; &amp; mpg" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
