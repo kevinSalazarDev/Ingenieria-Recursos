@@ -10,4 +10,4 @@ Muestra en pantalla el texto fijo «EL cielo es azul». Es un ejercicio introduc
 
 El archivo original [`ejercicio_1.fprg`](./ejercicio_1.fprg) se conserva para abrirlo y ejecutarlo con Flowgorithm.
 
-![Diagrama de flujo para mostrar un mensaje](./ejercicio_1%20-%20Main.svg)
+![Diagrama de flujo para mostrar un mensaje](./Mostrar%20un%20mensaje.svg)
