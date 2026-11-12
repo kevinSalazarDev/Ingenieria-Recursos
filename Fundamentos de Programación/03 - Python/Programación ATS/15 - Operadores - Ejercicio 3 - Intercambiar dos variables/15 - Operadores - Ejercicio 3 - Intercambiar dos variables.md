@@ -1,4 +1,4 @@
-# Ejercicio 15 - Operadores - Ejercicio 3 - Intercambiar dos variables
+# 15 - Operadores - Ejercicio 3 - Intercambiar dos variables
 
 ## Código Python
 
@@ -12,10 +12,8 @@ a , b = b , a
 
 print("a:",a)
 print("b:",b)
-
-
 ```
 
 ## Diagrama de flujo
 
-![Diagrama de flujo del ejercicio 15](15%20-%20Operadores%20-%20Ejercicio%203%20-%20Intercambiar%20dos%20variables.svg)
+<img src="./15%20-%20Operadores%20-%20Ejercicio%203%20-%20Intercambiar%20dos%20variables.svg" alt="Diagrama de flujo del ejercicio" width="100%">
