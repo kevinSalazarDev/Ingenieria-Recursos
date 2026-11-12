@@ -8,4 +8,6 @@ Declara una variable de texto, solicita un mensaje al usuario, almacena la entra
 
 ## Diagrama de flujo
 
-El archivo original [`ejercicio_2.fprg`](./ejercicio_2.fprg) se conserva para abrirlo y ejecutarlo con Flowgorithm. **La imagen SVG de este ejercicio está pendiente de incorporar**; no se ha generado una imagen sustituta.
+El archivo original [`ejercicio_2.fprg`](./ejercicio_2.fprg) se conserva para abrirlo y ejecutarlo con Flowgorithm.
+
+![Diagrama de flujo para leer y mostrar un mensaje](./ejercicio_2%20-%20Main.svg)
