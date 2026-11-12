@@ -10,4 +10,4 @@ Solicita la distancia recorrida y la cantidad de galones consumidos. Calcula el 
 
 El archivo original [`mpg.fprg`](./mpg.fprg) se conserva para abrirlo y ejecutarlo con Flowgorithm.
 
-![Diagrama de flujo del rendimiento de combustible (MPG)](./mpg%20-%20Main.svg)
+![Diagrama de flujo del rendimiento de combustible (MPG)](./Rendimiento%20de%20combustible%20(MPG).svg)
