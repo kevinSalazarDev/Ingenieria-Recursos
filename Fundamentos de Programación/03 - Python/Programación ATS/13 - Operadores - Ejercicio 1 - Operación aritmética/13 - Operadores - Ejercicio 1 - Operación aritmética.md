@@ -1,4 +1,4 @@
-# Ejercicio 13 - Operadores - Ejercicio 1 - Operación aritmética
+# 13 - Operadores - Ejercicio 1 - Operación aritmética
 
 ## Código Python
 
@@ -12,10 +12,11 @@ resultado = (a**3 * (b**2 - 2*a*c))/(2*b)
 print(resultado)
 print
 print
-prin    ```
+prin
+```
 
 ## Diagrama de flujo
 
-![Diagrama de flujo del ejercicio 13](13%20-%20Operadores%20-%20Ejercicio%201%20-%20Operaci%C3%B3n%20aritm%C3%A9tica.svg)
+<img src="./13%20-%20Operadores%20-%20Ejercicio%201%20-%20Operaci%C3%B3n%20aritm%C3%A9tica.svg" alt="Diagrama de flujo del ejercicio" width="100%">
 
-> **Nota:** El archivo original contiene dos referencias a print sin paréntesis y una línea «prin» incompleta. Se conserva exactamente; el diagrama señala esas líneas y no implica que el programa pueda ejecutarse.
+> **Nota:** El archivo original contiene dos referencias a print sin paréntesis y una línea «prin» incompleta. Se conserva exactamente; el diagrama representa las instrucciones identificables y no implica que el programa pueda ejecutarse.
