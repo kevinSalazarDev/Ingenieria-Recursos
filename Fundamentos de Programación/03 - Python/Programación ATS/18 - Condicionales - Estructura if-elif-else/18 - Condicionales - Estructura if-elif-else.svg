@@ -1,64 +1,66 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1100" role="img" aria-label="Diagrama de flujo estilo Flowgorithm: condicional if-elif-else">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" role="img" aria-label="Diagrama de flujo del ejercicio 18 con estilo visual de Flowgorithm">
 <defs>
-  <style>
-    svg{background:#fff;font-family:Arial,Helvetica,sans-serif}
-    .title{font-size:24px;font-weight:700;fill:#222}
-    .terminal{fill:#d9eaf7;stroke:#333;stroke-width:2}
-    .input{fill:#9fc5e8;stroke:#333;stroke-width:2}
-    .output{fill:#b6d7a8;stroke:#333;stroke-width:2}
-    .decision{fill:#ead1dc;stroke:#333;stroke-width:2}
-    .label{font-size:18px;fill:#222;text-anchor:middle;dominant-baseline:middle}
-    .branch{font-size:16px;font-weight:700;fill:#222}
-    .flow{fill:none;stroke:#333;stroke-width:2.2;stroke-linecap:square;stroke-linejoin:round;marker-end:url(#arrow)}
-  </style>
-  <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
-    <path d="M0 0 L0 6 L9 3 Z" fill="#333"/>
-  </marker>
+<style>
+svg{background:#000;font-family:Arial,Helvetica,sans-serif}
+.flow{fill:none;stroke:#d8d8d8;stroke-width:1.5;stroke-linecap:square;stroke-linejoin:round}
+.arrow{fill:none;stroke:#d8d8d8;stroke-width:1.5;marker-end:url(#arr)}
+.terminal{fill:#703078;stroke:#d58bdb;stroke-width:1.3}
+.input{fill:#0754a6;stroke:#00a6ff;stroke-width:1.5}
+.output{fill:#008b19;stroke:#00ff31;stroke-width:1.5}
+.decision{fill:#813f48;stroke:#ed9ca5;stroke-width:1.3}
+.txt{fill:#fff;font-size:13px;text-anchor:middle;dominant-baseline:middle}
+.branch{fill:#fff;font-size:12px}
+.connector{fill:#b66c72;stroke:#f0b4b8;stroke-width:1.2}
+</style>
+<marker id="arr" markerWidth="7" markerHeight="7" refX="5.5" refY="3" orient="auto">
+<path d="M0 0 L6 3 L0 6" fill="none" stroke="#d8d8d8" stroke-width="1"/>
+</marker>
 </defs>
-<text class="title" x="600" y="32" text-anchor="middle">18 - Condicionales - Estructura if-elif-else</text>
 
-<!-- Main -->
-<rect class="terminal" x="525" y="60" width="150" height="54" rx="27"/>
-<text class="label" x="600" y="87">Main</text>
-<path class="flow" d="M600 114 V165"/>
+<!-- Main and input -->
+<rect class="terminal" x="450" y="18" width="100" height="30" rx="15"/>
+<text class="txt" x="500" y="33">Main</text>
+<path class="arrow" d="M500 48 V88"/>
+<polygon class="input" points="435,88 565,88 552,132 422,132"/>
+<text class="txt" x="493" y="110">Input numero</text>
+<path class="arrow" d="M493 132 V190"/>
 
-<!-- Input -->
-<polygon class="input" points="455,165 745,165 725,235 435,235"/>
-<text class="label" x="590" y="200">numero</text>
-<path class="flow" d="M590 235 V285"/>
-
-<!-- If numero > 0 -->
-<polygon class="decision" points="590,285 735,365 590,445 445,365"/>
-<text class="label" x="590" y="365">numero &gt; 0</text>
+<!-- First condition -->
+<polygon class="decision" points="493,190 585,240 493,290 401,240"/>
+<text class="txt" x="493" y="240">numero &gt; 0</text>
 
 <!-- True: positive -->
-<path class="flow" d="M445 365 H225 V500"/>
-<text class="branch" x="320" y="347">Verdadero</text>
-<polygon class="output" points="105,500 355,500 335,575 85,575"/>
-<text class="label" x="220" y="538">"El número es positivo"</text>
+<path class="arrow" d="M401 240 H170 V390"/>
+<text class="branch" x="300" y="228">Verdadero</text>
+<polygon class="output" points="80,390 280,390 267,448 67,448"/>
+<text class="txt" x="173" y="419">Output "El número es positivo"</text>
 
 <!-- False: second condition -->
-<path class="flow" d="M735 365 H900 V500"/>
-<text class="branch" x="790" y="347">Falso</text>
-<polygon class="decision" points="900,500 1045,580 900,660 755,580"/>
-<text class="label" x="900" y="580">numero == 0</text>
+<path class="arrow" d="M585 240 H790 V390"/>
+<text class="branch" x="680" y="228">Falso</text>
+<polygon class="decision" points="790,390 882,440 790,490 698,440"/>
+<text class="txt" x="790" y="440">numero == 0</text>
 
 <!-- True: zero -->
-<path class="flow" d="M755 580 H650 V735"/>
-<text class="branch" x="675" y="562">Verdadero</text>
-<polygon class="output" points="535,735 785,735 765,810 515,810"/>
-<text class="label" x="650" y="773">"El número es cero"</text>
+<path class="arrow" d="M698 440 H540 V590"/>
+<text class="branch" x="610" y="428">Verdadero</text>
+<polygon class="output" points="445,590 645,590 632,648 432,648"/>
+<text class="txt" x="538" y="619">Output "El número es cero"</text>
 
 <!-- False: negative -->
-<path class="flow" d="M1045 580 H1080 V735"/>
-<text class="branch" x="1050" y="560">Falso</text>
-<polygon class="output" points="955,735 1185,735 1165,810 935,810"/>
-<text class="label" x="1060" y="773">"El número es negativo"</text>
+<path class="arrow" d="M882 440 H925 V590"/>
+<text class="branch" x="890" y="428">Falso</text>
+<polygon class="output" points="820,590 1000,590 987,648 807,648"/>
+<text class="txt" x="903" y="619">Output "El número es negativo"</text>
 
-<!-- Join branches and End -->
-<path class="flow" d="M220 575 V925 H600 V1000"/>
-<path class="flow" d="M650 810 V1000"/>
-<path class="flow" d="M1060 810 V925 H600"/>
-<rect class="terminal" x="525" y="1000" width="150" height="54" rx="27"/>
-<text class="label" x="600" y="1027">End</text>
+<!-- Branch joins, Flowgorithm-style connector dots -->
+<path class="flow" d="M173 448 V760 H260"/>
+<circle class="connector" cx="260" cy="760" r="5"/>
+<path class="flow" d="M538 648 V760 H260"/>
+<path class="flow" d="M903 648 V760 H740"/>
+<circle class="connector" cx="740" cy="760" r="5"/>
+<path class="arrow" d="M265 760 H500 V850"/>
+<path class="arrow" d="M740 760 H500"/>
+<rect class="terminal" x="450" y="850" width="100" height="30" rx="15"/>
+<text class="txt" x="500" y="865">End</text>
 </svg>
