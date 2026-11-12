@@ -8,4 +8,6 @@ Solicita el nombre y un mensaje, guarda ambos textos y genera una frase que rela
 
 ## Diagrama de flujo
 
-El archivo original [`ejercicio_3.fprg`](./ejercicio_3.fprg) se conserva para abrirlo y ejecutarlo con Flowgorithm. **La imagen SVG de este ejercicio está pendiente de incorporar**; no se ha generado una imagen sustituta.
+El archivo original [`ejercicio_3.fprg`](./ejercicio_3.fprg) se conserva para abrirlo y ejecutarlo con Flowgorithm.
+
+![Diagrama de flujo para mostrar el nombre y un mensaje](./ejercicio_3%20-%20Main.svg)
