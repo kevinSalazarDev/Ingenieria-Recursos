@@ -36,3 +36,7 @@ FinProceso
 ## Explicación
 
 El algoritmo utiliza una estructura de selección o repetición, según corresponda. Sigue la variable de control y revisa cuándo se cumple la condición para entender qué instrucciones se ejecutan y cuántas veces. Comprueba el comportamiento con distintos valores de entrada, incluidos los límites indicados en el ejercicio.
+
+## Diagrama de flujo
+
+![Diagrama de flujo del ejercicio 36 - Condicionales - Significado de aniversario](36%20-%20Condicionales%20-%20Significado%20de%20aniversario.svg)

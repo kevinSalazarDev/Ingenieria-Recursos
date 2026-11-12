@@ -41,3 +41,7 @@ FinProceso
 ## Explicación
 
 El algoritmo utiliza una estructura de selección o repetición, según corresponda. Sigue la variable de control y revisa cuándo se cumple la condición para entender qué instrucciones se ejecutan y cuántas veces. Comprueba el comportamiento con distintos valores de entrada, incluidos los límites indicados en el ejercicio.
+
+## Diagrama de flujo
+
+![Diagrama de flujo del ejercicio 37 - Condicionales - Menú de opciones](37%20-%20Condicionales%20-%20Men%C3%BA%20de%20opciones.svg)

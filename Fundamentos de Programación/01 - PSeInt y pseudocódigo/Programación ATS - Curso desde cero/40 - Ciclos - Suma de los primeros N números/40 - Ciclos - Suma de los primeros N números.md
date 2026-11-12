@@ -31,3 +31,7 @@ FinProceso
 ## Explicación
 
 El algoritmo utiliza una estructura de selección o repetición, según corresponda. Sigue la variable de control y revisa cuándo se cumple la condición para entender qué instrucciones se ejecutan y cuántas veces. Comprueba el comportamiento con distintos valores de entrada, incluidos los límites indicados en el ejercicio.
+
+## Diagrama de flujo
+
+![Diagrama de flujo del ejercicio 40 - Ciclos - Suma de los primeros N números](40%20-%20Ciclos%20-%20Suma%20de%20los%20primeros%20N%20n%C3%BAmeros.svg)
