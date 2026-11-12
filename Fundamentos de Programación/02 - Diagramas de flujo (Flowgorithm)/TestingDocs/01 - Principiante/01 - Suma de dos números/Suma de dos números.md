@@ -10,4 +10,4 @@ Solicita dos números enteros, los suma y muestra el resultado. Practica declara
 
 El archivo original [`Suma_Dos_Numeros.fprg`](./Suma_Dos_Numeros.fprg) se conserva para abrirlo y ejecutarlo con Flowgorithm.
 
-![Diagrama de flujo de la suma de dos números](./Suma_Dos_Numeros%20-%20Main.svg)
+![Diagrama de flujo de la suma de dos números](./Suma%20de%20dos%20n%C3%BAmeros.svg)
