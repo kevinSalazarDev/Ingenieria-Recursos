@@ -8,4 +8,6 @@ Solicita dos números enteros, los suma y muestra el resultado. Practica declara
 
 ## Diagrama de flujo
 
-El archivo original [`Suma_Dos_Numeros.fprg`](./Suma_Dos_Numeros.fprg) se conserva para abrirlo y ejecutarlo con Flowgorithm. **La imagen SVG de este ejercicio está pendiente de incorporar**; no se ha generado una imagen sustituta.
+El archivo original [`Suma_Dos_Numeros.fprg`](./Suma_Dos_Numeros.fprg) se conserva para abrirlo y ejecutarlo con Flowgorithm.
+
+![Diagrama de flujo de la suma de dos números](./Suma_Dos_Numeros%20-%20Main.svg)
