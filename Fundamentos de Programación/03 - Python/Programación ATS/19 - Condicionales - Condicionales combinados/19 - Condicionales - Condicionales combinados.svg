@@ -1,25 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 900" role="img" aria-label="19 - Condicionales - Condicionales combinados"><defs><style>
-svg{background:#fff;font-family:Arial,Helvetica,sans-serif}
-.title{font-size:21px;font-weight:700;fill:#222}
-.symbol{fill:#eaf4ff;stroke:#263746;stroke-width:2}
-.terminal{fill:#d9ecff;stroke:#263746;stroke-width:2}
-.decision{fill:#fff2cc;stroke:#263746;stroke-width:2}
-.label{font-size:16px;fill:#17212b;text-anchor:middle;dominant-baseline:middle}
-.small{font-size:14px;fill:#17212b;text-anchor:middle}
-.edge{font-size:14px;font-weight:700;fill:#222}
-.path{fill:none;stroke:#263746;stroke-width:2;marker-end:url(#arrow)}
-</style><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#263746"/></marker></defs><text class="title" x="550" y="40" text-anchor="middle">19 - Condicionales - Condicionales combinados</text>
-<rect class="terminal" x="475" y="65" width="150" height="52" rx="26"/><text class="label" x="550" y="91">Inicio</text>
-<path class="path" d="M550 117 V150"/><polygon class="symbol" points="430,150 670,150 650,208 450,208"/><text class="label" x="550" y="179">Leer edad</text>
-<path class="path" d="M550 208 V245"/><polygon class="decision" points="550,245 710,325 550,405 390,325"/><text class="label" x="550" y="325">0 &lt; edad &lt; 100</text>
-<path class="path" d="M390 325 H170 V465"/><text class="edge" x="260" y="310">Verdadero</text>
-<polygon class="symbol" points="55,465 285,465 265,530 75,530"/><text class="label" x="170" y="497">Mostrar edad correcta</text>
-<path class="path" d="M170 530 V570"/><polygon class="decision" points="170,570 310,640 170,710 30,640"/><text class="label" x="170" y="640">edad &gt;= 18</text>
-<path class="path" d="M30 640 H-5 V770 H170"/><text class="edge" x="14" y="620">Verdadero</text>
-<polygon class="symbol" points="55,770 285,770 265,835 75,835"/><text class="label" x="170" y="802">Mostrar mayor de edad</text>
-<path class="path" d="M310 640 H430 V770 H550"/><text class="edge" x="350" y="620">Falso</text>
-<polygon class="symbol" points="440,770 660,770 640,835 460,835"/><text class="label" x="550" y="802">Mostrar menor de edad</text>
-<path class="path" d="M710 325 H900 V465"/><text class="edge" x="790" y="310">Falso</text>
-<polygon class="symbol" points="790,465 1010,465 990,530 810,530"/><text class="label" x="900" y="497">Mostrar edad incorrecta</text>
-<path class="path" d="M170 835 V865 H550 M550 835 V865 M900 530 V865 H550"/>
-<rect class="terminal" x="475" y="865" width="150" height="32" rx="16"/><text class="label" x="550" y="881">Fin</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1000" role="img" aria-label="Diagrama de flujo de condicionales combinados"><defs><style>svg{background:#000;font-family:Arial,Helvetica,sans-serif}.line{fill:none;stroke:#ddd;stroke-width:1.5}.arrow{fill:none;stroke:#ddd;stroke-width:1.5;marker-end:url(#arr)}.terminal{fill:#703078;stroke:#d58bdb;stroke-width:1.3}.in{fill:#0754a6;stroke:#00a6ff;stroke-width:1.5}.out{fill:#008b19;stroke:#00ff31;stroke-width:1.5}.decision{fill:#813f48;stroke:#ed9ca5;stroke-width:1.3}.label{fill:#fff;font-size:13px;text-anchor:middle;dominant-baseline:middle}.branch{fill:#fff;font-size:12px}.dot{fill:#b66c72;stroke:#f0b4b8;stroke-width:1.2}</style><marker id="arr" markerWidth="7" markerHeight="7" refX="5.5" refY="3" orient="auto"><path d="M0 0 L6 3 L0 6" fill="none" stroke="#ddd"/></marker></defs>
+<rect class="terminal" x="550" y="20" width="100" height="30" rx="15"/><text class="label" x="600" y="35">Main</text><path class="arrow" d="M600 50 V95"/><polygon class="in" points="535,95 665,95 652,140 522,140"/><text class="label" x="593" y="118">Input edad</text><path class="arrow" d="M593 140 V195"/>
+<polygon class="decision" points="593,195 700,255 593,315 486,255"/><text class="label" x="593" y="255">0 &lt; edad &lt; 100</text>
+<path class="arrow" d="M700 255 H930 V380"/><text class="branch" x="790" y="242">Verdadero</text><polygon class="out" points="820,380 1040,380 1025,435 805,435"/><text class="label" x="922" y="407">Output: Edad correcta</text><path class="arrow" d="M922 435 V485"/>
+<polygon class="decision" points="922,485 1015,540 922,595 829,540"/><text class="label" x="922" y="540">edad &gt;= 18</text>
+<path class="arrow" d="M1015 540 H1090 V680"/><text class="branch" x="1030" y="527">Verdadero</text><polygon class="out" points="970,680 1190,680 1175,735 955,735"/><text class="label" x="1072" y="707">Output: Es mayor de edad</text>
+<path class="arrow" d="M829 540 H650 V680"/><text class="branch" x="710" y="527">Falso</text><polygon class="out" points="535,680 755,680 740,735 520,735"/><text class="label" x="637" y="707">Output: Es menor de edad</text>
+<path class="arrow" d="M486 255 H220 V680"/><text class="branch" x="320" y="242">Falso</text><polygon class="out" points="105,680 335,680 320,735 90,735"/><text class="label" x="212" y="707">Output: Edad incorrecta</text>
+<path class="line" d="M212 735 V850 H600 M637 735 V850 H600 M1072 735 V850 H600"/><circle class="dot" cx="600" cy="850" r="5"/><path class="arrow" d="M600 850 V920"/><rect class="terminal" x="550" y="920" width="100" height="30" rx="15"/><text class="label" x="600" y="935">End</text></svg>
