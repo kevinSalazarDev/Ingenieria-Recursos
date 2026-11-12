@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="area_rectangulo"/>
+        <attribute name="authors" value="K"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-07-23 06:36:30 p.&#160;m."/>
+        <attribute name="created" value="SztERVNLVE9QLTRPUjYzUUI7MjAyNi0wNy0yMzswNjoyNjozMCBwLsKgbS47MjcyMg=="/>
+        <attribute name="edited" value="SztERVNLVE9QLTRPUjYzUUI7MjAyNi0wNy0yMzswNjozNjozMCBwLsKgbS47MzsyODMz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="lado, ancho, area" type="Real" array="False" size=""/>
+            <output expression="&quot;Ingrese el lado del rectangulo: &quot;" newline="True"/>
+            <input variable="lado"/>
+            <output expression="&quot;Ingrese el ancho del rectangulo: &quot;" newline="True"/>
+            <input variable="ancho"/>
+            <assign variable="area" expression="lado * ancho"/>
+            <output expression="&quot;El area del rectangulo es: &quot; &amp; area" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
