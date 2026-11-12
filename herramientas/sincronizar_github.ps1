@@ -1,73 +1,176 @@
+
 $ErrorActionPreference = "Stop"
 
 function Fail($message) {
     Write-Host ""
     Write-Host $message -ForegroundColor Red
-    Write-Host "No se forzo ningun cambio ni se uso force push." -ForegroundColor Yellow
+    Write-Host "No se forzaron cambios ni se descartaron archivos." -ForegroundColor Yellow
     Read-Host "Presiona Enter para cerrar"
     exit 1
 }
 
 try {
+    # Identificar el repositorio
     $repo = Split-Path -Parent (Split-Path -Parent $MyInvocation.MyCommand.Path)
     Set-Location $repo
 
     if (-not (Test-Path (Join-Path $repo ".git"))) {
-        Fail "No encuentro la carpeta .git. Coloca estos dos archivos dentro de Ingenieria-Recursos."
+        Fail "No encuentro la carpeta .git."
     }
 
     $branch = (git branch --show-current).Trim()
     if ($LASTEXITCODE -ne 0 -or $branch -ne "main") {
-        Fail "La rama actual no es main (detectada: '$branch'). No hice cambios."
+        Fail "La rama actual no es main. No hice cambios."
     }
 
-    Write-Host "Repositorio: $repo" -ForegroundColor Cyan
-    Write-Host "Rama: main"
+    Write-Host "====================================" -ForegroundColor Cyan
+    Write-Host "       SINCRONIZADOR DE GITHUB" -ForegroundColor Cyan
+    Write-Host "====================================" -ForegroundColor Cyan
+    Write-Host "Repositorio: $repo"
+    Write-Host "Rama: $branch"
+
+    # Detectar operaciones Git pendientes
+    $gitDir = (git rev-parse --git-dir).Trim()
+    if ($LASTEXITCODE -ne 0) {
+        Fail "No se pudo identificar la carpeta interna de Git."
+    }
+
+    $pendingOperations = @(
+        "rebase-merge",
+        "rebase-apply",
+        "MERGE_HEAD",
+        "CHERRY_PICK_HEAD",
+        "REVERT_HEAD"
+    )
+
+    foreach ($operation in $pendingOperations) {
+        if (Test-Path (Join-Path $gitDir $operation)) {
+            Fail "Hay una operacion Git pendiente ($operation). Solicita ayuda antes de continuar."
+        }
+    }
+
+    # No continuar si existen cambios preparados previamente
+    $staged = git diff --cached --name-only
+    if ($LASTEXITCODE -ne 0) {
+        Fail "No se pudo revisar el area de preparacion."
+    }
+
+    if ($staged) {
+        Write-Host "Hay cambios preparados previamente." -ForegroundColor Yellow
+        Write-Host "No los modificare ni incluire automaticamente."
+        Fail "Revisa los cambios preparados antes de sincronizar."
+    }
+
+    # Consultar GitHub
     Write-Host ""
-    Write-Host "Revisando GitHub..." -ForegroundColor Cyan
+    Write-Host "Consultando GitHub..." -ForegroundColor Cyan
+
     git fetch origin
-    if ($LASTEXITCODE -ne 0) { Fail "No se pudo conectar con GitHub. Revisa tu conexion." }
+    if ($LASTEXITCODE -ne 0) {
+        Fail "No se pudo consultar GitHub. Revisa tu conexion."
+    }
+
+    # Mostrar cambios locales
+    Write-Host ""
+    Write-Host "ESTADO ACTUAL:" -ForegroundColor Cyan
+    git status -sb
+    if ($LASTEXITCODE -ne 0) {
+        Fail "No se pudo revisar el estado."
+    }
 
     Write-Host ""
-    Write-Host "Cambios locales detectados:" -ForegroundColor Cyan
+    Write-Host "CAMBIOS LOCALES:" -ForegroundColor Cyan
     git status --short
-    if ($LASTEXITCODE -ne 0) { Fail "No se pudo revisar el estado del repositorio." }
 
     Write-Host ""
-    Write-Host "ATENCION: se incluiran los archivos nuevos, modificados y eliminados del repositorio."
-    Write-Host "Asegurate de no tener contrasenas, claves ni archivos privados dentro del proyecto."
-    $answer = Read-Host "¿Deseas sincronizar estos cambios con GitHub? (S/N)"
+    Write-Host "ATENCION:"
+    Write-Host "Se pueden incluir archivos nuevos, modificados y eliminados."
+    Write-Host "Revisa que no existan contrasenas, claves ni archivos privados."
+
+    $answer = Read-Host "¿Deseas preparar todos los cambios locales? (S/N)"
     if ($answer -notmatch '^(s|si|sí)$') {
-        Write-Host "Cancelado. No se modifico nada." -ForegroundColor Yellow
+        Write-Host "Cancelado. No se modificaron archivos." -ForegroundColor Yellow
         Read-Host "Presiona Enter para cerrar"
         exit 0
     }
 
+    # Preparar los cambios
     git add -A
-    if ($LASTEXITCODE -ne 0) { Fail "No se pudieron preparar los archivos." }
+    if ($LASTEXITCODE -ne 0) {
+        Fail "No se pudieron preparar los archivos."
+    }
 
     git diff --cached --quiet
-    $hasChanges = ($LASTEXITCODE -ne 0)
+    $diffResult = $LASTEXITCODE
 
-    if ($hasChanges) {
+    if ($diffResult -eq 1) {
+        Write-Host ""
+        Write-Host "CAMBIOS QUE SE GUARDARAN:" -ForegroundColor Cyan
+        git diff --cached --name-status
+
+        $confirm = Read-Host "¿Confirmas crear un commit con estos cambios? (S/N)"
+        if ($confirm -notmatch '^(s|si|sí)$') {
+            git reset
+            if ($LASTEXITCODE -ne 0) {
+                Fail "No se pudieron retirar los cambios del area de preparacion. Tus archivos siguen intactos."
+            }
+            Write-Host "Cancelado. Los archivos originales siguen intactos." -ForegroundColor Yellow
+            Read-Host "Presiona Enter para cerrar"
+            exit 0
+        }
+
         $message = "Actualizacion del repositorio: $(Get-Date -Format 'yyyy-MM-dd HH:mm')"
         git commit -m $message
-        if ($LASTEXITCODE -ne 0) { Fail "No se pudo crear el commit. Revisa la configuracion de Git." }
-    } else {
+        if ($LASTEXITCODE -ne 0) {
+            Fail "No se pudo crear el commit. Tus archivos siguen en el repositorio."
+        }
+    }
+    elseif ($diffResult -eq 0) {
         Write-Host "No hay cambios locales nuevos para guardar." -ForegroundColor Green
     }
-
-    Write-Host ""
-    Write-Host "Integrando cambios de GitHub..." -ForegroundColor Cyan
-    git pull --rebase origin main
-    if ($LASTEXITCODE -ne 0) {
-        Fail "La integracion no termino. Puede haber un conflicto. No se subio nada; conserva esta ventana y pide ayuda antes de continuar."
+    else {
+        Fail "No se pudo comprobar si existen cambios preparados."
     }
 
+    # Comprobar divergencia con GitHub
     Write-Host ""
-    Write-Host "Subiendo a GitHub..." -ForegroundColor Cyan
-    git push origin main
-    if ($LASTEXITCODE -ne 0) { Fail "No se pudo subir a GitHub. Tus cambios locales siguen en el repositorio." }
+    Write-Host "Comprobando diferencias con GitHub..." -ForegroundColor Cyan
+
+    $counts = git rev-list --left-right --count main...origin/main
+    if ($LASTEXITCODE -ne 0) {
+        Fail "No se pudieron comparar las ramas."
+    }
+
+    $parts = $counts.Trim() -split '\s+'
+    $ahead = [int]$parts[0]
+    $behind = [int]$parts[1]
+
+    Write-Host "Commits locales pendientes de subir: $ahead"
+    Write-Host "Commits remotos pendientes de integrar: $behind"
+
+    if ($ahead -gt 0 -and $behind -gt 0) {
+        Fail "Las ramas tienen cambios diferentes. Se necesita revisar la integracion manualmente."
+    }
+
+    if ($behind -gt 0 -and $ahead -eq 0) {
+        Write-Host "Actualizando mediante avance seguro..." -ForegroundColor Cyan
+        git merge --ff-only origin/main
+        if ($LASTEXITCODE -ne 0) {
+            Fail "No se pudo actualizar mediante avance seguro."
+        }
+    }
+
+    if ($ahead -gt 0) {
+        Write-Host ""
+        Write-Host "Subiendo cambios a GitHub..." -ForegroundColor Cyan
+        git push origin main
+        if ($LASTEXITCODE -ne 0) {
+            Fail "No se pudo subir. Tus commits locales se conservaron."
+        }
+    }
+    else {
+        Write-Host "No hay commits locales pendientes de subir." -ForegroundColor Green
+    }
 
     Write-Host ""
     Write-Host "SINCRONIZACION COMPLETADA." -ForegroundColor Green
