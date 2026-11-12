@@ -10,4 +10,4 @@ Ejecuta cuatro instrucciones de salida consecutivas para mostrar los textos «Sa
 
 El archivo original [`ejercicio_4.fprg`](./ejercicio_4.fprg) se conserva para abrirlo y ejecutarlo con Flowgorithm.
 
-![Diagrama de flujo de varias salidas](./ejercicio_4%20-%20Main.svg)
+![Diagrama de flujo de varias salidas](./Mostrar%20varias%20salidas.svg)
