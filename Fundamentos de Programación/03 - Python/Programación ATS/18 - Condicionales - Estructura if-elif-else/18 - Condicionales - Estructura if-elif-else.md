@@ -1,4 +1,4 @@
-# Ejercicio 18 - ondicionales - Estructura if-elif-else
+# Ejercicio 18 - Condicionales - Estructura if-elif-else
 
 ## Código Python
 
@@ -18,4 +18,4 @@ else:
 
 ## Diagrama de flujo
 
-![Diagrama de flujo del ejercicio 18](18%20-%20Condicionales%20-%20Estructura%20if-elif-else.svg)
+![Diagrama de flujo del ejercicio 18](./18%20-%20Condicionales%20-%20Estructura%20if-elif-else.svg)
