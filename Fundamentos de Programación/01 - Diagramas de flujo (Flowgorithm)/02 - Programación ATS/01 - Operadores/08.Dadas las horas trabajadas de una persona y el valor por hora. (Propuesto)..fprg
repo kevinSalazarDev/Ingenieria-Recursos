@@ -4,15 +4,15 @@
         <attribute name="name" value="Ejercicio_8"/>
         <attribute name="authors" value="K"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2026-07-23 09:36:29 p.&#160;m."/>
+        <attribute name="saved" value="2026-11-13 04:35:08 p.&#160;m."/>
         <attribute name="created" value="SztERVNLVE9QLTRPUjYzUUI7MjAyNi0wNy0yMzswOTozMjowMCBwLsKgbS47MjcxOQ=="/>
-        <attribute name="edited" value="SztERVNLVE9QLTRPUjYzUUI7MjAyNi0wNy0yMzswOTozNjoyOSBwLsKgbS47MTsyODQy"/>
+        <attribute name="edited" value="SztERVNLVE9QLTRPUjYzUUI7MjAyNi0xMS0xMzswNDozNTowOCBwLsKgbS47MjsyODI4"/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
         <body>
             <declare name="horas, valor, salario" type="Real" array="False" size=""/>
-            <output expression="&quot;Ingrese el valor de horas trabajadas:&quot;" newline="True"/>
+            <output expression="&quot;Ingrese el n&#250;mero de horas trabajadas:&quot;" newline="True"/>
             <input variable="horas"/>
             <output expression="&quot;Ingrese el valor por hora: &quot;" newline="True"/>
             <input variable="valor"/>
