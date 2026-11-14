@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="2. SumaOMultiplicacionDeLosPrimeros10Numeros"/>
+        <attribute name="authors" value="K"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-08-09 04:09:17 p.&#160;m."/>
+        <attribute name="created" value="SztERVNLVE9QLTRPUjYzUUI7MjAyNi0wOC0wOTswMzo1NDo1MCBwLsKgbS47MjcyNw=="/>
+        <attribute name="edited" value="SztERVNLVE9QLTRPUjYzUUI7MjAyNi0wOC0wOTswNDowOToxNyBwLsKgbS47NTsyODQz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numero, i, multiplicacion, suma" type="Integer" array="False" size=""/>
+            <assign variable="suma" expression="0"/>
+            <assign variable="multiplicacion" expression="1"/>
+            <output expression="&quot;Digite un n&#250;mero:&quot;" newline="True"/>
+            <input variable="numero"/>
+            <if expression="numero&gt;10">
+                <then>
+                    <for variable="i" start="1" end="10" direction="inc" step="1">
+                        <assign variable="multiplicacion" expression="multiplicacion*i"/>
+                    </for>
+                    <output expression="&quot;La multiplicaci&#243;n de los primeros 10 n&#250;meros es:&quot; &amp;multiplicacion" newline="True"/>
+                </then>
+                <else>
+                    <for variable="i" start="1" end="10" direction="inc" step="1">
+                        <assign variable="suma" expression="suma+i"/>
+                    </for>
+                    <output expression="&quot;La suma de los primeros 10 n&#250;meros es:&quot; &amp;suma" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

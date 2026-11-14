@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="26. Diagrama de Flujo en DFD - Ciclos o Bucles - Qu&#233; es un ciclo o bucle"/>
+        <attribute name="authors" value="K"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-11-07 11:23:52 p.&#160;m."/>
+        <attribute name="created" value="SztERVNLVE9QLTRPUjYzUUI7MjAyNi0xMS0wNzsxMTowMzoyMyBwLsKgbS47MjcxMg=="/>
+        <attribute name="edited" value="SztERVNLVE9QLTRPUjYzUUI7MjAyNi0xMS0wNzsxMToyMzo1MiBwLsKgbS47MTI7Mjg3NA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="contador" type="Integer" array="False" size=""/>
+            <declare name="suma" type="Integer" array="False" size=""/>
+            <assign variable="suma" expression="0"/>
+            <for variable="contador" start="1" end="5" direction="inc" step="1">
+                <assign variable="suma" expression="suma + contador"/>
+            </for>
+            <output expression="suma" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

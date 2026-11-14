@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="26. Diagrama de Flujo en DFD - Ciclos o Bucles - Qu&#233; es un ciclo o bucle"/>
+        <attribute name="authors" value="K"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-11-08 04:06:13 p.&#160;m."/>
+        <attribute name="created" value="SztERVNLVE9QLTRPUjYzUUI7MjAyNi0xMS0wNzsxMTowMzoyMyBwLsKgbS47MjcxMg=="/>
+        <attribute name="edited" value="SztERVNLVE9QLTRPUjYzUUI7MjAyNi0xMS0wODswMzo1NzoxNiBwLsKgbS47MTtLO0RFU0tUT1AtNE9SNjNRQjsyMDI2LTExLTA3OzExOjAzOjIzIHAuwqBtLjsyNy4gU3VtYSBkZSBsb3MgbiBwcmltZXJvcyBuw7ptZXJvcy5mcHJnOzkzMjU="/>
+        <attribute name="edited" value="SztERVNLVE9QLTRPUjYzUUI7MjAyNi0xMS0wODswNDowNjoxMyBwLsKgbS47Mjc7Mjg4MQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numero, contador, multiplicacion, suma" type="Integer" array="False" size=""/>
+            <assign variable="multiplicacion" expression="1"/>
+            <assign variable="suma" expression="0"/>
+            <output expression="&quot;Ingrese un n&#250;mero: &quot;" newline="True"/>
+            <input variable="numero"/>
+            <if expression="numero &gt; 10">
+                <then>
+                    <for variable="contador" start="1" end="10" direction="inc" step="1">
+                        <assign variable="multiplicacion" expression="multiplicacion * contador"/>
+                    </for>
+                    <output expression="multiplicacion" newline="True"/>
+                </then>
+                <else>
+                    <for variable="contador" start="1" end="10" direction="inc" step="1">
+                        <assign variable="suma" expression="suma + contador"/>
+                    </for>
+                    <output expression="suma" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

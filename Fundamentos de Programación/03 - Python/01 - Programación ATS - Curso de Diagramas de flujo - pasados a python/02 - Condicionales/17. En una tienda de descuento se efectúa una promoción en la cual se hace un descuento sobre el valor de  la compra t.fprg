@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Problema_17_descuentoBolitas"/>
+        <attribute name="authors" value="K"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-08-07 10:38:02 p.&#160;m."/>
+        <attribute name="created" value="SztERVNLVE9QLTRPUjYzUUI7MjAyNi0wOC0wNzsxMDowNDoxMCBwLsKgbS47MjcxNA=="/>
+        <attribute name="edited" value="SztERVNLVE9QLTRPUjYzUUI7MjAyNi0wOC0wNzsxMDozODowMiBwLsKgbS47MTM7Mjg4MQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="compra, r, descuento, total" type="Real" array="False" size=""/>
+            <output expression="&quot;Ingrese el valor de su compra:&quot;" newline="True"/>
+            <input variable="compra"/>
+            <assign variable="r" expression="random(5)+1"/>
+            <if expression="r = 1">
+                <then>
+                    <output expression="&quot;Bolita blanca&quot;" newline="True"/>
+                    <assign variable="descuento" expression="compra"/>
+                    <output expression="&quot;Eligi&#243; la bolita blanca, lo sentimos no se le har&#225; descuento alguno, el total de su compra es $&quot; &amp;compra" newline="True"/>
+                </then>
+                <else>
+                    <if expression="r = 2">
+                        <then>
+                            <output expression="&quot;Bolita verde&quot;" newline="True"/>
+                            <assign variable="descuento" expression="compra*10/100"/>
+                        </then>
+                        <else>
+                            <if expression="r=3">
+                                <then>
+                                    <output expression="&quot;Bolita amarilla&quot;" newline="True"/>
+                                    <assign variable="descuento" expression="compra*25/100"/>
+                                </then>
+                                <else>
+                                    <if expression="r=4">
+                                        <then>
+                                            <output expression="&quot;Bolita azul&quot;" newline="True"/>
+                                            <assign variable="descuento" expression="compra*50/100"/>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;Bolita roja&quot;" newline="True"/>
+                                            <assign variable="descuento" expression="compra*100/100"/>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                    <assign variable="total" expression="compra-descuento"/>
+                    <output expression="&quot;El precio total con descuento es $&quot; &amp; total" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

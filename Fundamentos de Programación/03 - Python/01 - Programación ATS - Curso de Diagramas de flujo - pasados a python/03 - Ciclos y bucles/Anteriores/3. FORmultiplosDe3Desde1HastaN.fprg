@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="3. FORmultiplosDe3Desde1HastaN"/>
+        <attribute name="authors" value="K"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-08-09 04:26:43 p.&#160;m."/>
+        <attribute name="created" value="SztERVNLVE9QLTRPUjYzUUI7MjAyNi0wOC0wOTswNDoxNzo0OCBwLsKgbS47MjczNA=="/>
+        <attribute name="edited" value="SztERVNLVE9QLTRPUjYzUUI7MjAyNi0wOC0wOTswNDoyNjo0MyBwLsKgbS47NTsyODQx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numero, i" type="Integer" array="False" size=""/>
+            <output expression="&quot;Digite un n&#250;mero:&quot;" newline="True"/>
+            <input variable="numero"/>
+            <for variable="i" start="1" end="numero" direction="inc" step="1">
+                <if expression="i mod 3=0">
+                    <then>
+                        <output expression="&quot;El n&#250;mero &quot; &amp;i&amp; &quot; es m&#250;ltiplo de 3&quot;" newline="True"/>
+                    </then>
+                    <else>
+                        <output expression="&quot;El n&#250;mero &quot; &amp;i&amp; &quot; no es m&#250;ltiplo de 3&quot;" newline="True"/>
+                    </else>
+                </if>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

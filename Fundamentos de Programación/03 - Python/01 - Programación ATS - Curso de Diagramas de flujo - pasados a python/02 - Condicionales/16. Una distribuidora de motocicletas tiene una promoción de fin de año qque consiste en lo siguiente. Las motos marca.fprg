@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Problema_16_descuentoMotos"/>
+        <attribute name="authors" value="K"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-08-07 09:52:25 p.&#160;m."/>
+        <attribute name="created" value="SztERVNLVE9QLTRPUjYzUUI7MjAyNi0wOC0wNzswOTozMDo0NiBwLsKgbS47MjczMA=="/>
+        <attribute name="edited" value="SztERVNLVE9QLTRPUjYzUUI7MjAyNi0wOC0wNzswOTo1MjoyNSBwLsKgbS47NDsyODQy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="precio, descuento, total" type="Real" array="False" size=""/>
+            <declare name="marca" type="String" array="False" size=""/>
+            <output expression="&quot;Ingrese el precio de la moto:&quot;" newline="True"/>
+            <input variable="precio"/>
+            <output expression="&quot;Ingrese la marca de la moto:&quot;" newline="True"/>
+            <input variable="marca"/>
+            <if expression="marca = &quot;honda&quot;">
+                <then>
+                    <assign variable="descuento" expression="precio*5/100"/>
+                    <assign variable="total" expression="precio  - descuento"/>
+                    <output expression="&quot;El precio de la moto Honda con un descuento del 5% es de $&quot; &amp; total" newline="True"/>
+                </then>
+                <else>
+                    <if expression="marca = &quot;yamaha&quot;">
+                        <then>
+                            <assign variable="descuento" expression="precio*8/100"/>
+                            <assign variable="total" expression="precio  - descuento"/>
+                            <output expression="&quot;El precio de la moto Yamaha con un descuento del 8% es de $&quot; &amp; total" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="marca = &quot;suzuki&quot;">
+                                <then>
+                                    <assign variable="descuento" expression="precio*10/100"/>
+                                    <assign variable="total" expression="precio  - descuento"/>
+                                    <output expression="&quot;El precio de la moto Suzuki con un descuento del 10% es de $&quot; &amp; total" newline="True"/>
+                                </then>
+                                <else>
+                                    <assign variable="descuento" expression="precio*2/100"/>
+                                    <assign variable="total" expression="precio  - descuento"/>
+                                    <output expression="&quot;El precio de esta moto con un descuento del 2% es de $&quot; &amp; total" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

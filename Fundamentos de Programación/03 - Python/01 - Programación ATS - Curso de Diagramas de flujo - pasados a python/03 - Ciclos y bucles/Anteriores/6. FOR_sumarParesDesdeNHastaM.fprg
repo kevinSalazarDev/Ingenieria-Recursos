@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="6. FOR_sumarParesDesdeNHastaM"/>
+        <attribute name="authors" value="K"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-08-09 08:10:35 p.&#160;m."/>
+        <attribute name="created" value="SztERVNLVE9QLTRPUjYzUUI7MjAyNi0wOC0wOTswNzo0ODowMyBwLsKgbS47MjczMg=="/>
+        <attribute name="edited" value="SztERVNLVE9QLTRPUjYzUUI7MjAyNi0wOC0wOTswODoxMDozNSBwLsKgbS47NzsyODQx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, m, i, suma" type="Integer" array="False" size=""/>
+            <assign variable="suma" expression="0"/>
+            <output expression="&quot;Ingrese dos n&#250;meros:&quot;" newline="True"/>
+            <input variable="n"/>
+            <input variable="m"/>
+            <for variable="i" start="n" end="m" direction="inc" step="1">
+                <if expression="i mod 2 =0">
+                    <then>
+                        <assign variable="suma" expression="suma+i"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <output expression="&quot;La suma de los pares desde n hasta m es &quot; &amp;suma" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

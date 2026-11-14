@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Problema_9_total_a_pagar_camisas"/>
+        <attribute name="authors" value="K"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-08-06 11:31:28 p.&#160;m."/>
+        <attribute name="created" value="SztERVNLVE9QLTRPUjYzUUI7MjAyNi0wOC0wNjsxMDozNTowMCBwLsKgbS47MjcxNg=="/>
+        <attribute name="edited" value="SztERVNLVE9QLTRPUjYzUUI7MjAyNi0wOC0wNjsxMTozMToyOCBwLsKgbS47NzsyODM3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="precioCamisa, nCamisas, total, descuento" type="Real" array="False" size=""/>
+            <output expression="&quot;Ingrese el n&#250;mero de camisas que compr&#243;:&quot;" newline="True"/>
+            <input variable="nCamisas"/>
+            <output expression="&quot;Ingrese el precio de la camisa:&quot;" newline="True"/>
+            <input variable="precioCamisa"/>
+            <assign variable="total" expression="nCamisas*precioCamisa"/>
+            <if expression="nCamisas &gt;= 3">
+                <then>
+                    <assign variable="descuento" expression="total*20/100"/>
+                </then>
+                <else>
+                    <assign variable="descuento" expression="total*10/100"/>
+                </else>
+            </if>
+            <assign variable="total" expression="total - descuento"/>
+            <output expression="&quot;El precio total de las camisas es: &quot; &amp; total &amp; &quot; d&#243;lares&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

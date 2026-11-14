@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Problema_21_horasMinutosSegundos+1"/>
+        <attribute name="authors" value="K"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-08-08 06:12:02 p.&#160;m."/>
+        <attribute name="created" value="SztERVNLVE9QLTRPUjYzUUI7MjAyNi0wOC0wODswNTozMjo1NSBwLsKgbS47MjcyOQ=="/>
+        <attribute name="edited" value="SztERVNLVE9QLTRPUjYzUUI7MjAyNi0wOC0wODswNjoxMjowMiBwLsKgbS47NDsyODMx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="horas, minutos, segundos" type="Real" array="False" size=""/>
+            <output expression="&quot;Ingrese la hora, minutos y segundos:&quot;" newline="True"/>
+            <input variable="horas"/>
+            <input variable="minutos"/>
+            <input variable="segundos"/>
+            <assign variable="segundos" expression="segundos + 1"/>
+            <if expression="minutos &gt; 59">
+                <then>
+                    <assign variable="minutos" expression="0"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="horas &gt; 23">
+                <then>
+                    <assign variable="horas" expression="0"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="minutos &gt; 59">
+                <then>
+                    <assign variable="minutos" expression="0"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="segundos &gt; 59">
+                <then>
+                    <assign variable="segundos" expression="0"/>
+                    <assign variable="minutos" expression="minutos+1"/>
+                    <if expression="minutos &gt; 59">
+                        <then>
+                            <assign variable="minutos" expression="0"/>
+                            <assign variable="horas" expression="horas+1"/>
+                            <if expression="horas &gt; 23">
+                                <then>
+                                    <assign variable="horas" expression="0"/>
+                                </then>
+                                <else/>
+                            </if>
+                        </then>
+                        <else/>
+                    </if>
+                </then>
+                <else/>
+            </if>
+            <output expression="&quot;La hora despu&#233;s de un segundo es: &quot; &amp;horas&amp; &quot;:&quot;&amp;minutos&amp; &quot;:&quot;&amp;segundos" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
