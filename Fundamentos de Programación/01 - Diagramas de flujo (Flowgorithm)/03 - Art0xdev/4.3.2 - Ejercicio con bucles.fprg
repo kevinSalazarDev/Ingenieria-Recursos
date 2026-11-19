@@ -4,9 +4,9 @@
         <attribute name="name" value="4.3.1_for"/>
         <attribute name="authors" value="K"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2026-11-07 10:51:19 p.&#160;m."/>
+        <attribute name="saved" value="2026-11-18 09:28:46 p.&#160;m."/>
         <attribute name="created" value="SztERVNLVE9QLTRPUjYzUUI7MjAyNi0wOC0yNDswNTowMDo0MSBwLsKgbS47MjcxNw=="/>
-        <attribute name="edited" value="SztERVNLVE9QLTRPUjYzUUI7MjAyNi0xMS0wNzsxMDo1MToxOSBwLsKgbS47MTE7Mjg3Ng=="/>
+        <attribute name="edited" value="SztERVNLVE9QLTRPUjYzUUI7MjAyNi0xMS0xODswOToyODo0NiBwLsKgbS47MTI7Mjg5MQ=="/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
@@ -26,7 +26,6 @@
             <assign variable="contador2" expression="0"/>
             <declare name="encontrado" type="Boolean" array="False" size=""/>
             <assign variable="encontrado" expression="false"/>
-            <breakpoint expression="" always="True"/>
             <while expression="contador2 &lt; 5 &amp;&amp; encontrado == false">
                 <if expression="nombresPonentes[contador2] == busqueda">
                     <then>
